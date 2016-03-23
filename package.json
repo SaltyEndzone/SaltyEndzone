@@ -1,4 +1,14 @@
 {
+  "engines": {
+    "node": "4.4.0"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "",
+    "start": "node server",
+    "postinstall": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress --colors",
+    "eslint": "eslint ."
+  },
   "dependencies": {
     "bootstrap-webpack": "0.0.5",
     "react": "^0.14.7",
