@@ -5,7 +5,7 @@ export default class Discussion extends Component {
     return (
       <div>
         <div>
-          <h2 className="discussion">Discussion</h2>
+          <button className="discussion-title">DISCUSSION</button>
             <p className="discussion">Kathybeatz: How do you traverse through a tree?</p>
             <p className="discussion">MickyDWow: You can traverse through a tree by recursing over each node's children</p>
         </div>
