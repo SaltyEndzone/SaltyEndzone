@@ -1,0 +1,30 @@
+h2 {
+  font-family: Arial;
+}
+.menu-bar {
+  height: 10vh;
+  line-height: 10vh; /* vert. center text hack */
+  padding-left: 3vw;
+  padding-right: 4vw;
+  background-color: #799dbb;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: Arial;
+  font-size: 40px;
+}
+
+.login {
+  font-family: Arial;
+  text-align: right;
+  font-size: 30px;
+  float: right;
+}
+
+.dataStructureTitle {
+  font-family: Arial;
+  padding-left: 3vw;
+  padding-top: 3vh;
+}
