@@ -1,0 +1,15 @@
+h1 {
+  font-family: Arial;
+}
+
+.linkedlist-image {
+  width: 1000px;
+  padding-left: 4vw;
+}
+
+.linkedlistactions {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  background-color: #799dbb;
+}
