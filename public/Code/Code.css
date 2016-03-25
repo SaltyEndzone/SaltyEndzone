@@ -1,16 +1,12 @@
-.discussion {
-  padding-left: 4vw;
+.code-section {
+  width: 520px;
+  height: 321px;
 }
 
-.code {
-  padding-top: 6vh;
-  padding-left: 4vw;
-}
-
-.discussion-title {
+.code-title {
   width: 250px;
   height: 45px;
-  margin-top: 12vh;
+  margin-top: 14vh;
   margin-left: 4vw;
   margin-bottom: 3vh;
   text-align: center;

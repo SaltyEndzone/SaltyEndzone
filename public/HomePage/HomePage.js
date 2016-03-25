@@ -5,7 +5,6 @@ import { render } from 'react-dom'
 export default class HomePage extends Component {
  
   render() {
-
     return (
       <div>
         <div className="dataButtons">
@@ -17,9 +16,7 @@ export default class HomePage extends Component {
           <img className="data-structure-buttons" src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/HASHTB08.svg/362px-HASHTB08.svg.png' />
         </div>
       </div>
-
     )
-
   }
 }
 

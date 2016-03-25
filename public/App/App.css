@@ -1,19 +1,25 @@
 h2 {
   font-family: Arial;
 }
+
+body {
+  background-color: #EEEEEE;
+}
+
 .menu-bar {
   height: 10vh;
   line-height: 10vh; /* vert. center text hack */
   padding-left: 3vw;
   padding-right: 4vw;
-  background-color: #799dbb;
+  background-color: #333333;
   color: #FFFFFF;
   text-transform: uppercase;
 }
 
 .title {
+  margin-left: 2vw;
   font-family: Arial;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .login {
@@ -23,8 +29,20 @@ h2 {
   float: right;
 }
 
+.logo {
+  height: 10vh;
+}
+
 .dataStructureTitle {
+  width: 400px;
+  height: 60px;
+  margin-top: 5vh;
+  margin-left: 4vw;
+  margin-bottom: 3vh;
+  text-align: center;
   font-family: Arial;
-  padding-left: 3vw;
-  padding-top: 3vh;
+  font-size: 40px; 
+  border-style:none;
+  color: #FFFFFF;
+  background-color: #000000;
 }
