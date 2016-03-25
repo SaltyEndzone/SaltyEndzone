@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 
-class HelloWorld extends Component {
-  render() {
-    return (
-      <div>Hello World!</div>
-    )
-  }
-}
+import { createStore, combineReducers } from 'redux'
+import { Provider } from 'react-redux'
 
-render(<HelloWorld/>, document.getElementById('app'))
+import App from './public/App/App'
+
+render(
+  <App />,
+  document.getElementById('app')
+)
