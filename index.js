@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
+import HomePage from './public/home/HomePage'
 
 class HelloWorld extends Component {
   render() {
     return (
-      <div>Hello World!</div>
+      <div>
+      < HomePage />
+      </div>
     )
   }
 }
