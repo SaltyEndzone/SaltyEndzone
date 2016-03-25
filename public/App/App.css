@@ -19,6 +19,8 @@ h2 {
 .login {
   font-family: Arial;
   text-align: right;
+  font-size: 30px;
+  float: right;
 }
 
 .dataStructureTitle {
