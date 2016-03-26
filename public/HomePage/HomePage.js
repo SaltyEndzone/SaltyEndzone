@@ -11,6 +11,7 @@ export default class HomePage extends Component {
         
       
         <div className="data-buttons-section">
+
          
           <img className="data-structure-buttons" src ={require('./img/stack.png')} />
 
