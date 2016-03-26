@@ -10,11 +10,10 @@ export default class LinkedList extends Component {
             <img className="linkedlist-image" src="http://visualgo.net/img/list.gif" />
           <div>
 
-          <div>
-            <ul className="nav nav-pills nav-stacked">
-              <li className="linkedlistactions"><a href="#">Add to Tail</a></li>
-              <li className="linkedlistactions"><a href="#">Contains</a></li>
-            </ul>
+          <div className="action-section">
+            <button className="action-title">ADD TO TAIL</button>
+            <button className="action-title">REMOVE HEAD</button>
+            <button className="action-title">CONTAINS</button>
           </div>
         </div>
         </div>
