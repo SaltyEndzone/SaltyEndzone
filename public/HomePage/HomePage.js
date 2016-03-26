@@ -29,8 +29,10 @@ export default class HomePage extends Component {
 
           
           <img className="data-structure-buttons" src ={require('./img/hashTable.png')} />
+
           
         </div>
+
 
       </div>
     )

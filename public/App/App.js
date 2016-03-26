@@ -13,7 +13,7 @@ export default class App extends Component {
           <img className="logo" src="http://visualgo.net/img/heap.gif" />
           <span className="title">Data.Structrz</span>
         </div>
-        <LinkedList />
+        <HomePage />
       </div>
     )
   }
