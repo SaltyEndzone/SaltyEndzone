@@ -16,6 +16,7 @@ export default class HomePage extends Component {
           <img className="data-structure-buttons" src = 'http://files.differencebetween.com/wp-content/uploads/2014/09/Graph-in-Data-Structure_Difference-Between-Tree-and-Graph-in-Data-Structure.png' />
           <img className="data-structure-buttons" src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/HASHTB08.svg/362px-HASHTB08.svg.png' />
         </div>
+
       </div>
 
     )
