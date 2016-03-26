@@ -11,11 +11,13 @@ export default class Discussion extends Component {
         </div>
 
         <div className="col-md-6 discussion">
-          <input type="text" className="form-control" placeholder="Search for...">
-            <span className="input-group-btn">
-              <button className="btn btn-default" type="button">Go!</button>
-            </span>
-          </input>
+          <div class="input-group">
+            <input type="text" className="form-control" placeholder="Comment here ...">
+              <span className="input-group-btn">
+                <button className="btn btn-default" type="button">POST</button>
+              </span>
+            </input>
+          </div>
         </div>
       </div>
     )
