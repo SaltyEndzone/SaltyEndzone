@@ -9,17 +9,15 @@ export default class LinkedList extends Component {
     	</div>
     );
         <div className="col-md-6">
-    	    <h1 className="dataStructureTitle">Linked List</h1>
-            <img className="linkedlist-image" src="http://www.mikedoescoding.com/images/Linked%20List%20Data%20Structure.png" />
+          <button className="dataStructureTitle">LINKED LIST</button>
+            <img className="linkedlist-image" src="http://visualgo.net/img/list.gif" />
           <div>
 
-          <div>
-          <ul className="nav nav-pills nav-stacked">
-            <li className="linkedlistactions"><a href="#">Add to Tail</a></li>
-            <li className="linkedlistactions"><a href="#">Contains</a></li>
-          </ul>
-
-        </div>
+          <div className="action-section">
+            <button className="action-title">ADD TO TAIL</button>
+            <button className="action-title">REMOVE HEAD</button>
+            <button className="action-title">CONTAINS</button>
+          </div>
         </div>
         </div>
     )
