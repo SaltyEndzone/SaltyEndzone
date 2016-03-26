@@ -5,10 +5,9 @@ import { render } from 'react-dom'
 export default class HomePage extends Component {
  
   render() {
-
     return (
       <div>
-        <div className="dataButtons">
+        <div className="data-buttons-section">
           <img className="data-structure-buttons" src = 'https://unnikked.ga/data/stack-push.png' />
           <img className="data-structure-buttons" src = 'https://netmatze.files.wordpress.com/2014/08/queue.png' />
           <img className="data-structure-buttons" src= 'http://i.stack.imgur.com/5kJXf.gif' />
@@ -17,9 +16,7 @@ export default class HomePage extends Component {
           <img className="data-structure-buttons" src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/HASHTB08.svg/362px-HASHTB08.svg.png' />
         </div>
       </div>
-
     )
-
   }
 }
 

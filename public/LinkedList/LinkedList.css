@@ -3,7 +3,7 @@ h1 {
 }
 
 .linkedlist-image {
-  width: 1000px;
+  width: 800px;
   padding-left: 4vw;
 }
 
@@ -12,4 +12,26 @@ h1 {
   font-weight: bold;
   text-align: center;
   background-color: #799dbb;
+}
+
+.action-title {
+  top: 5px;
+  width: 200px;
+  height: 30px;
+  margin-left: 4vw;
+  margin-top: 0.5vh;
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px; 
+  border-style:none;
+  color: #FFFFFF;
+  background-color: #404040;
+}
+
+.action-title:hover {
+ background-color: #FF8B24;
+}
+
+.action-section {
+  margin-top: 2vh;
 }
