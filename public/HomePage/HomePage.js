@@ -7,7 +7,7 @@ export default class HomePage extends Component {
   render() {
     return (
       <div>
-        <div className="dataButtons">
+        <div className="data-buttons-section">
           <img className="data-structure-buttons" src = 'https://unnikked.ga/data/stack-push.png' />
           <img className="data-structure-buttons" src = 'https://netmatze.files.wordpress.com/2014/08/queue.png' />
           <img className="data-structure-buttons" src= 'http://i.stack.imgur.com/5kJXf.gif' />
