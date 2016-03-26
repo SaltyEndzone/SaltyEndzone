@@ -14,11 +14,8 @@ export default class App extends Component {
           <span className="title">Data.Structrz</span>
         </div>
         <HomePage />
-	      <LinkedList />
-	      <Tree />
       </div>
     )
   }
 }
-
 
