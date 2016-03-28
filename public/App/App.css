@@ -19,7 +19,7 @@ body {
 .title {
   margin-left: 2vw;
   font-family: Arial;
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .login {
@@ -34,14 +34,14 @@ body {
 }
 
 .dataStructureTitle {
-  width: 400px;
-  height: 60px;
+  width: 200px;
+  height: 40px;
   margin-top: 5vh;
   margin-left: 4vw;
   margin-bottom: 3vh;
   text-align: center;
   font-family: Arial;
-  font-size: 40px; 
+  font-size: 25px; 
   border-style:none;
   color: #FFFFFF;
   background-color: #000000;

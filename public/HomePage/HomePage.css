@@ -1,15 +1,16 @@
 .data-structure-buttons {
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 225px;
   padding: 50px;
   border: 5px black;
   background: #FFFFFF;
-  margin: 40px;
+  margin: 30px;
+
 }
 
 .data-buttons-section {
-  width: 1500px;
+  width: 1300px;
   top: 30vh;
   margin: auto;
-  float: center; 
+  
 }

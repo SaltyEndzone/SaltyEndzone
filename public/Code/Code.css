@@ -1,17 +1,17 @@
 .code-section {
   width: 520px;
-  height: 500px;
+  height: 300px;
 }
 
 .code-title {
-  width: 250px;
-  height: 45px;
+  width: 166px;
+  height: 29px;
   margin-top: 14vh;
   margin-left: 4vw;
   margin-bottom: 3vh;
   text-align: center;
   font-family: Arial;
-  font-size: 30px; 
+  font-size: 20px; 
   border-style:none;
   color: #FFFFFF;
   background-color: #000000;
