@@ -44,6 +44,6 @@ module.exports = {
   //Since we're running Webpack from our server, need to manually add the
   //Hot Replacement plugin
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin()
   ]
 };
