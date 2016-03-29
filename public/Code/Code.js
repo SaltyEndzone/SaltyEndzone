@@ -7,7 +7,7 @@ export default class Code extends Component {
   render() {
     return (
       <div className="code-section">
-        <button className="code-title">HI CODE</button>
+        <button className="code-title">CODE</button>
       </div>
     )
   }

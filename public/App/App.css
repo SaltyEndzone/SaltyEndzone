@@ -20,6 +20,11 @@ body {
   margin-left: 2vw;
   font-family: Arial;
   font-size: 35px;
+  color: #FFFFFF;
+}
+
+.title:hover {
+  text-decoration: none;
 }
 
 .login {
