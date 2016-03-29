@@ -1,4 +1,5 @@
 var express = require('express');
+var mongoose = require('mongoose');
 var path = require('path');
 var httpProxy = require('http-proxy');
 var publicPath = path.resolve(__dirname, 'public');
@@ -15,6 +16,10 @@ var proxy = httpProxy.createProxyServer({
 });
 
 var app = express();
+
+
+var dbURI='mongodb://heroku_3q6cp12q:8bdmlrro29rr1l85hr5j08a5gb@ds025409.mlab.com:25409/heroku_3q6cp12q';
+mongoose.connect( dbURI );
 
 //serving our index.html
 app.use(express.static(publicPath));
@@ -42,4 +47,10 @@ proxy.on('error', function(e) {
 
 app.listen(port, function () {
   console.log('Server running on port ' + port)
+});
+
+mongoose.connection.on( 'connected', function () {
+
+  console.log( 'successful db connection to: ' + dbURI + '\n' );
+
 });
