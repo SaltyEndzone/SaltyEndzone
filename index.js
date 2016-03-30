@@ -8,7 +8,7 @@ import Root from './Root'
 import configureStore from './create-store'
 
 const store = configureStore()
-const history = syncHistoryWithStore(browserHistory, store);
+const history = syncHistoryWithStore(browserHistory, store)
 
 render((
   <Root history={history} store={store} />
