@@ -10,7 +10,7 @@ export default class HomePage extends Component {
         <div className="data-buttons-section">
           <img className="data-structure-buttons" src ={require('./img/stack.png')} />
           <img className="data-structure-buttons" src ={require('./img/queue.png')} />
-          <img className="data-structure-buttons" src={require('./img/tree.png')} />
+          <Link to={'tree'}><img className="data-structure-buttons" src={require('./img/tree.png')} /></Link>
           <Link to={'linkedlist'}><img className="data-structure-buttons" src={require('./img/linkedList.png')} /></Link>
           <img className="data-structure-buttons" src ={require('./img/graph.png')} />
           <img className="data-structure-buttons" src ={require('./img/hashTable.png')} /> 

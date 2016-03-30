@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 import Discussion from '../Discussion/Discussion.js'
 
@@ -20,3 +21,4 @@ export default class LinkedList extends Component {
     )
   }
 }
+

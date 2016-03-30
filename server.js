@@ -9,6 +9,7 @@ var publicPath = path.resolve(__dirname, 'public');
 var isProduction = process.env.NODE_ENV === 'production';
 var port = isProduction ? process.env.PORT : 3000;
 
+
 // We need to add a configuration to our proxy server,
 // as we are now proxying outside localhost
 var proxy = httpProxy.createProxyServer({
