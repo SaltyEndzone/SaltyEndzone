@@ -6,11 +6,21 @@
   background: #FFFFFF;
   margin: 30px;
   box-shadow: 0px 0px 3px #dddddd;
+  -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+  -moz-transition: all 0.5s ease; /* Firefox */
+  -o-transition: all 0.5s ease; /* IE 9 */
+  -ms-transition: all 0.5s ease; /* Opera */
+  transition: all 0.5s ease;
 
 }
 
 .data-structure-buttons:hover {
   box-shadow: 0px 0px 3px #aaaaaa;
+  -webkit-transform:scale(1.05); /* Safari and Chrome */
+  -moz-transform:scale(1.05); /* Firefox */
+  -ms-transform:scale(1.05); /* IE 9 */
+  -o-transform:scale(1.05); /* Opera */
+  transform:scale(1.05);
 }
 
 .data-buttons-section {
@@ -19,3 +29,37 @@
   margin: auto;
   
 }
+
+.button-wrapper {
+  /* force the div to properly contain the floated images: */
+  position:relative;
+  float:left;
+  clear:none;
+  overflow:hidden;
+}
+
+.button-wrapper img {
+  position:relative;
+}
+
+.button-wrapper .text {
+  position:absolute;
+  width:100%;
+  top:42%;
+  text-align:center;
+  display: none;
+  font-size: 30px;
+}
+
+.button-wrapper:hover .text {
+  display:block;
+  position:absolute;
+  width:100%;
+  top:42%;
+  text-align:center;
+  display: block;
+  text-decoration: bold;
+  font-size: 30px;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+

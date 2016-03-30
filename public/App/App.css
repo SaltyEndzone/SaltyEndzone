@@ -7,8 +7,8 @@ body {
 }
 
 .menu-bar {
-  height: 10vh;
-  line-height: 10vh; /* vert. center text hack */
+  height: 8vh;
+  line-height: 8vh; /* vert. center text hack */
   padding-left: 3vw;
   padding-right: 4vw;
   background-color: #333333;
@@ -19,25 +19,26 @@ body {
 .title {
   margin-left: 2vw;
   font-family: Arial;
-  font-size: 35px;
+  font-size: 30px;
   color: #FFFFFF;
 }
 
 .title:hover {
   text-decoration: none;
-}
-
-.login {
-  font-family: Arial;
-  text-align: right;
-  font-size: 30px;
-  float: right;
+  color: #DDDDDD;
 }
 
 .logo {
-  height: 10vh;
+  height: 8vh;
 }
 
+.login {
+  font-size: 15px;
+  float: right;
+}
+.login:hover {
+  color: #DDDDDD;
+}
 .dataStructureTitle {
   width: 200px;
   height: 40px;
@@ -51,3 +52,5 @@ body {
   color: #FFFFFF;
   background-color: #000000;
 }
+
+
