@@ -30,14 +30,15 @@ module.exports = {
         exclude: '/node_modules'
       },
       //This converts our .css into JS
-      {
-        test: /\.css$/,
-        loader: 'css-loader'
+      { 
+        test: /\.css$/, 
+        loader: 'style-loader!css-loader' 
       },
       {
-      test: /\.(png|jpg)$/,
-      loader: 'url?limit=25000'
-    }
+        test: /\.(png|jpg)$/,
+        loader: 'url?limit=25000'
+      }
+
     ]
   },
   //Since we're running Webpack from our server, need to manually add the

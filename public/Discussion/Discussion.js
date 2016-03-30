@@ -9,7 +9,6 @@ export default class Discussion extends Component {
             <p className="discussion">Kathybeatz: How do you traverse through a tree?</p>
             <p className="discussion">MickyDWow: You can traverse through a tree by recursing over each nodes children</p>
         </div>
-
         <div className="col-md-6 discussion">
           <div class="input-group">
             <input type="text" className="form-control" placeholder="Comment here ...">
@@ -20,6 +19,6 @@ export default class Discussion extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

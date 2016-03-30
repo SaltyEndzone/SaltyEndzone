@@ -34,6 +34,10 @@ var config = {
       test: /\.css$/,
       loader: 'style!css'
     },
+    {
+      test: /\.(png|jpg)$/,
+      loader: 'url?limit=25000'
+    },
     { test: require.resolve("jquery"), loader: "imports?jQuery=jquery" },
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
       { test: /\.(woff|woff2)$/, loader:"url?prefix=font/&limit=5000" },
