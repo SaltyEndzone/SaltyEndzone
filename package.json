@@ -21,6 +21,7 @@
     "jquery": "^2.2.2",
     "mongoose": "^4.4.10",
     "react": "^0.14.7",
+    "react-bootstrap": "^0.28.4",
     "react-dom": "^0.14.7",
     "react-redux": "^4.4.1",
     "react-router": "^2.0.1",
