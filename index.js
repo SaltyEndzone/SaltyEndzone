@@ -8,8 +8,13 @@ import './public/HomePage/HomePage.css'
 import './public/Login/Login.css'
 import './public/Code/Code.css'
 import './public/Discussion/Discussion.css'
+import './public/HomePage/HomePage.css'
+import './public/Stack/Stack.css'
 import './public/LinkedList/LinkedList.css'
 import './public/Tree/Tree.css'
+
+
+
 
 import makeRoutes from './routes'
 import Root from './Root'
