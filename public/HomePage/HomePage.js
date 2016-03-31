@@ -29,7 +29,7 @@ export default class HomePage extends Component {
             <Link to={'graph'}><p className="text">GRAPH</p></Link>
           </div>
           <div className="button-wrapper">
-            <Link to={'hashtable'}><img className="data-structure-buttons" src={require('./img/hashtable.png')} /></Link>
+            <Link to={'hashtable'}><img className="data-structure-buttons" src={require('./img/hashTable.png')} /></Link>
             <Link to={'hashtable'}><p className="text">HASH TABLE</p></Link>
           </div>
         </div>
