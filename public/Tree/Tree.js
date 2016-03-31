@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import Discussion from '../Discussion/Discussion.js'
+import Discussion from '../Discussion/Discussion'
+import Code from '../Code/Code'
+
 
 export default class Tree extends Component {
   render() {

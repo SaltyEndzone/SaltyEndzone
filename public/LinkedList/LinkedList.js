@@ -1,6 +1,6 @@
-
 import React, { Component } from 'react'
 import Discussion from '../Discussion/Discussion.js'
+import Code from '../Code/Code'
 
 export default class LinkedList extends Component {
   render() {

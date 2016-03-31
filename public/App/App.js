@@ -3,6 +3,8 @@ import { Link } from 'react-router'
 import { connect } from 'react-redux'
 
 import HomePage from '../HomePage/HomePage'
+import Stack from '../Stack/Stack'
+import StackPage from '../Stack/StackPage'
 import LinkedList from '../LinkedList/LinkedList'
 import LinkedListPage from '../LinkedList/LinkedListPage'
 import Tree from '../Tree/Tree'
