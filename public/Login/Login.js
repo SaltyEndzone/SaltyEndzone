@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import { Link } from 'react-router'
+import Modal from 'react-bootstrap'
 
 const MySmallModal = React.createClass({
   render() {
