@@ -4,11 +4,11 @@ export default function login(state = {
   login: false
 }, action) {
   switch (action.type) {
-    case OPEN_LOGIN:
+    case 'OPEN_LOGIN':
       return Object.assign({}, state, {
         login: true
       })
-    case CLOSE_LOGIN:
+    case 'CLOSE_LOGIN':
       return Object.assign({}, state, {
         login: false,
       })
