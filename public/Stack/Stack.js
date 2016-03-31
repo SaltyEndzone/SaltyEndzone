@@ -8,7 +8,7 @@ export default class Stack extends Component {
     return (
 
         <div className="col-md-6">
-          <button className="dataStructureTitle">Stack</button>
+          <button className="dataStructureTitle">STACK</button>
             <img className="stack-image" src="http://www.tutorial4us.com/data-structure/images/push-operation.gif" />
           <div>
 
