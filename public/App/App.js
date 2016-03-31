@@ -32,13 +32,13 @@ export default class App extends Component {
   }
 
   render() {
-    const {store, children, login} = this.props
+    const {store, children, login, openLogin, closeLogin} = this.props
     return ( 
       <div>
         <div className="menu-bar">
           <img className="logo" src="http://visualgo.net/img/heap.gif" />
           <Link to={'home'}><span className="title">Data.Structrz</span></Link>
-          <Login openLogin={this.openLogin} closeLogin={this.closeLogin} login={login} /> 
+          <Login openLogin={this.openLogin} closeLogin={this.closeLogin} login={login} />
         </div>
         {children}
       </div>

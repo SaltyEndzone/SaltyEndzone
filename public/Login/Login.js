@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 
 import { Button, Modal } from 'react-bootstrap'
 
+
 export default class Login extends Component {
   render() {
 
@@ -10,22 +11,29 @@ export default class Login extends Component {
     
       return (
       <div>
-        <Button
-          bsStyle="primary"
-          bsSize="large"
-          onClick={openLogin}>
-          Fight!
-        </Button>
-        <Modal show={login.login}
-          closeTimeoutMS={150}>
-          <Modal.Body>
-          <Modal.Title className="winner-header">Winner Winner Chicken Dinner</Modal.Title>
-   
-          </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={closeLogin}>Close</Button>
-          </Modal.Footer>
-        </Modal>
+      <span className="login" onClick={openLogin}>LOGIN</span> 
+
+          <Modal className="modal-dialog" bsSize="small" show={login.login} closeTimeoutMS={150}>
+            <Modal.Body>
+            <Modal.Title className="login-title">Login</Modal.Title>
+            </Modal.Body>
+            <div className="login-input">
+              <div className="form-group">
+                <div className="user-input">
+                  <i className="glyphicon glyphicon-user"></i>
+                  <input type="email" className="form-control" placeholder="Username"/>
+                </div>
+                <div className="password-input">
+                  <i className="glyphicon glyphicon-lock"></i>
+                  <input type="password" className="form-control" placeholder="Password"/>
+                </div>
+              </div>
+            </div>
+            <div className="login-button">
+              <Button className="btn btn-info" onClick={closeLogin}>Welcome Back!</Button>
+            </div> 
+          </Modal>
+
       </div>
     );
   }

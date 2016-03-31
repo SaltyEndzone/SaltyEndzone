@@ -1,3 +1,50 @@
-.login-button {
+.login-title {
+  text-align: center;
+  font-size: 30px;
+}
 
+.login-button {
+  height: 50px;
+  text-align: center;
+}
+
+.login-input {
+  margin: auto;
+  width: 225px;
+}
+
+.user-input {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.user-input input {
+  padding-left: 30px;
+}
+
+.user-input .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  padding-left: 30px;
+}
+
+.password-input .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.modal-dialog {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
 }
