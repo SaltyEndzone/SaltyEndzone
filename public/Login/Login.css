@@ -1,4 +1,5 @@
 .login-title {
+  margin-top: 10px;
   text-align: center;
   font-size: 30px;
 }
@@ -42,9 +43,22 @@
   pointer-events: none;
 }
 
+.register-button {
+  height: 40px;
+   text-align: center;
+}
+
+.register-link {
+  text-align: center;
+}
+
 .modal-dialog {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%) !important;
+}
+
+.form-group .glyphicon {
+  color: #99999F;
 }

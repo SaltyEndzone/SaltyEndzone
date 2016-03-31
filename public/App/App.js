@@ -38,6 +38,7 @@ export default class App extends Component {
         <div className="menu-bar">
           <img className="logo" src="http://visualgo.net/img/heap.gif" />
           <Link to={'home'}><span className="title">Data.Structrz</span></Link>
+          <span className="login" onClick={openLogin}>LOGIN</span> 
           <Login openLogin={this.openLogin} closeLogin={this.closeLogin} login={login} />
         </div>
         {children}

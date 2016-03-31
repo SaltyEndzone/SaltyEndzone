@@ -11,8 +11,7 @@ export default class Login extends Component {
     
       return (
       <div>
-      <span className="login" onClick={openLogin}>LOGIN</span> 
-
+        <span className="login" onClick={openLogin}>LOGIN</span> 
           <Modal className="modal-dialog" bsSize="small" show={login.login} closeTimeoutMS={150}>
             <Modal.Body>
             <Modal.Title className="login-title">Login</Modal.Title>
@@ -31,9 +30,11 @@ export default class Login extends Component {
             </div>
             <div className="login-button">
               <Button className="btn btn-info" onClick={closeLogin}>Welcome Back!</Button>
-            </div> 
+            </div>
+            <div className="register-button">
+              <a className="register-link" ui-sref="register">Not a member? Sign up!</a> 
+            </div>
           </Modal>
-
       </div>
     );
   }
