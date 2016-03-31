@@ -4,13 +4,17 @@ import { browserHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
 
 import './public/App/App.css'
+import './public/HomePage/HomePage.css'
+import './public/Login/Login.css'
 import './public/Code/Code.css'
 import './public/Discussion/Discussion.css'
 import './public/HomePage/HomePage.css'
 import './public/Stack/Stack.css'
 import './public/LinkedList/LinkedList.css'
 import './public/Tree/Tree.css'
-import './public/Login/Login.css'
+
+
+
 
 import makeRoutes from './routes'
 import Root from './Root'
