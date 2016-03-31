@@ -2,12 +2,12 @@ h1 {
   font-family: Arial;
 }
 
-.queue-image {
+.graph-image {
   width: 550px;
   padding-left: 4vw;
 }
 
-.queueactions {
+.graphactions {
   color: #FFFFFF;
   font-weight: bold;
   text-align: center;

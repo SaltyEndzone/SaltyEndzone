@@ -8,13 +8,13 @@ export default class HomePage extends Component {
     return (
       <div>
         <div className="data-buttons-section">
-        <div className="button-wrapper">
+          <div className="button-wrapper">
             <Link to={'stack'}><img className="data-structure-buttons" src={require('./img/stack.png')} /></Link>
             <Link to={'stack'}><p className="text">STACK</p></Link>
           </div>
           <div className="button-wrapper">
-            <img className="data-structure-buttons" src ={require('./img/queue.png')} />
-            <p className="text">QUEUE</p>
+            <Link to={'queue'}><img className="data-structure-buttons" src={require('./img/queue.png')} /></Link>
+            <Link to={'queue'}><p className="text">QUEUE</p></Link>
           </div>
           <div className="button-wrapper">
             <Link to={'tree'}><img className="data-structure-buttons" src={require('./img/tree.png')} /></Link>
@@ -25,12 +25,12 @@ export default class HomePage extends Component {
             <Link to={'linkedlist'}><p className="text">LINKED LIST</p></Link>
           </div>
           <div className="button-wrapper">
-            <img className="data-structure-buttons" src ={require('./img/graph.png')} />
-            <p className="text">GRAPH</p>
+            <Link to={'graph'}><img className="data-structure-buttons" src={require('./img/graph.png')} /></Link>
+            <Link to={'graph'}><p className="text">GRAPH</p></Link>
           </div>
           <div className="button-wrapper">
-            <img className="data-structure-buttons" src ={require('./img/hashTable.png')} /> 
-            <p className="text">HASH TABLE</p>
+            <Link to={'hashtable'}><img className="data-structure-buttons" src={require('./img/hashtable.png')} /></Link>
+            <Link to={'hashtable'}><p className="text">HASH TABLE</p></Link>
           </div>
         </div>
       </div>

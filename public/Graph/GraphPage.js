@@ -1,16 +1,16 @@
  import React, { Component } from 'react'
 
-import Queue from '../Queue/Queue'
+import Graph from '../Graph/Graph'
 import Discussion from '../Discussion/Discussion'
 import Code from '../Code/Code'
 
-export default class QueuePage extends Component {
+export default class GraphPage extends Component {
   render() {
     return ( 
       <div>
         <div className="row">
           <div className="col-md-6">
-            <Queue />
+            <Graph />
           </div>
           <div className="col-md-6">
             <Code />
