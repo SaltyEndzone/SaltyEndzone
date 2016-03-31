@@ -1,26 +1,41 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-import { Link } from 'react-router'
 
-const MySmallModal = React.createClass({
+import { Button, Modal } from 'react-bootstrap'
+
+
+export default class Login extends Component {
   render() {
-    return (
-      <Modal {...this.props} bsSize="small" aria-labelledby="contained-modal-title-sm">
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-sm">Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <h4>Login</h4>
-            <form>
-              <input type="text" placeholder="username" required />
-              <input type="password" placeholder="password" required />
-              <Link to="linkedlist" className="login-button">Welcome Back</Link>
-            </form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={this.props.onHide}>Close</Button>
-        </Modal.Footer>
-      </Modal>
+
+    const { openLogin, closeLogin, login } = this.props
+    
+      return (
+      <div>
+        <span className="login" onClick={openLogin}>LOGIN</span> 
+          <Modal className="modal-dialog" bsSize="small" show={login.login} closeTimeoutMS={150}>
+            <Modal.Body>
+            <Modal.Title className="login-title">Login</Modal.Title>
+            </Modal.Body>
+            <div className="login-input">
+              <div className="form-group">
+                <div className="user-input">
+                  <i className="glyphicon glyphicon-user"></i>
+                  <input type="email" className="form-control" placeholder="Username"/>
+                </div>
+                <div className="password-input">
+                  <i className="glyphicon glyphicon-lock"></i>
+                  <input type="password" className="form-control" placeholder="Password"/>
+                </div>
+              </div>
+            </div>
+            <div className="login-button">
+              <Button className="btn btn-info" onClick={closeLogin}>Welcome Back!</Button>
+            </div>
+            <div className="register-button">
+              <a className="register-link" ui-sref="register">Not a member? Sign up!</a> 
+            </div>
+          </Modal>
+      </div>
     );
   }
-});
+}

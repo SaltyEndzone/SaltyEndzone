@@ -11,7 +11,8 @@ import Tree from '../Tree/Tree'
 import TreePage from '../Tree/TreePage'
 import Discussion from '../Discussion/Discussion'
 import Code from '../Code/Code'
-import { openLogin, closeLogin } from '../Login/LoginReducers'
+import Login from '../Login/Login'
+import { openLogin, closeLogin } from '../Login/LoginActions'
 
 
 export default class App extends Component {  
@@ -27,17 +28,18 @@ export default class App extends Component {
 
   closeLogin () {
     const { dispatch } = this.props
-    dispatch(closeModal())
+    dispatch(closeLogin())
   }
 
   render() {
-    const {store, children} = this.props
+    const {store, children, login, openLogin, closeLogin} = this.props
     return ( 
       <div>
         <div className="menu-bar">
           <img className="logo" src="http://visualgo.net/img/heap.gif" />
           <Link to={'home'}><span className="title">Data.Structrz</span></Link>
-          <span className="login" onClick={() => openLogin()}>LOGIN</span>
+          <span className="login" onClick={openLogin}>LOGIN</span> 
+          <Login openLogin={this.openLogin} closeLogin={this.closeLogin} login={login} />
         </div>
         {children}
       </div>
@@ -49,6 +51,7 @@ function mapStateToProps(state) {
   const login = state.login
   return {
     login
+
   }
 }
 

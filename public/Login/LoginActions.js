@@ -7,8 +7,9 @@ export function openLogin() {
   }
 }
 
-export function closeLOGIN() {
+export function closeLogin() {
   return {
     type: CLOSE_LOGIN
   }
 }
+
