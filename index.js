@@ -15,9 +15,9 @@ import './public/Queue/Queue.css'
 import './public/Graph/Graph.css'
 import './public/HashTable/HashTable.css'
 
-import makeRoutes from './routes'
-import Root from './Root'
-import configureStore from './create-store'
+import makeRoutes from './public/routes'
+import Root from './public/Root'
+import configureStore from './public/create-store'
 
 const store = configureStore()
 const history = syncHistoryWithStore(browserHistory, store)
