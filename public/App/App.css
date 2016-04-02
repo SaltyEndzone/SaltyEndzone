@@ -36,9 +36,11 @@ body {
   font-size: 15px;
   float: right;
 }
+
 .login:hover {
   color: #DDDDDD;
 }
+
 .dataStructureTitle {
   width: 200px;
   height: 40px;
@@ -53,4 +55,7 @@ body {
   background-color: #000000;
 }
 
+.animation-section {
+  margin-left: 4vw;
+}
 
