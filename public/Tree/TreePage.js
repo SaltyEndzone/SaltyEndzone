@@ -2,7 +2,7 @@
 
 import Tree from '../Tree/Tree'
 import Discussion from '../Discussion/Discussion'
-import Code from '../Code/Code'
+import TreeCode from './TreeCode'
 
 export default class TreePage extends Component {
   render() {
@@ -13,7 +13,7 @@ export default class TreePage extends Component {
             <Tree />
           </div>
           <div className="col-md-6">
-            <Code />
+            <TreeCode />
             <Discussion />
           </div>
         </div>

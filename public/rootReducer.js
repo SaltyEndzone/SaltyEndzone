@@ -1,12 +1,14 @@
 import { combineReducers } from 'redux'
 import { routerReducer as routing } from 'react-router-redux'
 import login from './Login/LoginReducers'
-import treeFunction from './Tree/TreeReducers'
+import { treeFunction, activeTreeFunction } from './Tree/TreeReducers'
+
 
 const rootReducer = combineReducers({
-  routing,
-  login,
-  treeFunction
+  routing: routing,
+  login: login,
+  treeFunction: treeFunction,
+  activeTreeFunction: activeTreeFunction
 })
 
 export default rootReducer

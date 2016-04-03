@@ -1,3 +1,6 @@
 export function selectTreeFunction (func) {
-  console.log('A function has been selected: ', func.treeFunction);
+  return {
+    type: 'TREE_FUNCTION_SELECTED',
+    payload: func
+  }
 }
