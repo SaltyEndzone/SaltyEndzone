@@ -7,7 +7,7 @@ export default class StackSize extends Component {
         <div>{'Stack.prototype.size = function(){'}</div>
         <div className="indent">{'return this._size;'}</div>
         <div>{'};'}</div>
-      <div>
+      </div>
     )
   }
 }

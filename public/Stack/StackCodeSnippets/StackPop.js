@@ -10,7 +10,7 @@ export default class StackPop extends Component {
         <div className="indent">{'delete this._storage[this._size];'}</div>
         <div className="indent">{'return result;'}</div>
         <div>{'};'}</div>
-      <div>
+      </div>
     )
   }
 }
