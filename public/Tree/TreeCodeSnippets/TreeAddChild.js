@@ -5,8 +5,8 @@ export default class TreeAddChild extends Component {
     return (
       <div>
         <div>{'treeMethods.addChild = function(value){'}</div>
-        <div className="indent">{'     var newTree = Tree(value);'}</div>
-        <div className="indent">{'     this.children.push(newTree);'}</div>
+        <div className="indent">{'var newTree = Tree(value);'}</div>
+        <div className="indent">{'this.children.push(newTree);'}</div>
         <div>{'};'}</div>
       </div>
     )
