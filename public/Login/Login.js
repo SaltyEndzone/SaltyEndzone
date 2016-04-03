@@ -11,7 +11,9 @@ export default class Login extends Component {
     
       return (
       <div>
-        <span className="login" onClick={openLogin}>LOGIN</span> 
+        <div className="login-corner">
+         <span className="login" onClick={openLogin}>LOGIN</span> 
+        </div>
           <Modal className="modal-dialog" bsSize="small" show={login.login} closeTimeoutMS={150}>
             <Modal.Body>
             <Modal.Title className="login-title">Login</Modal.Title>
