@@ -1,14 +1,36 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { selectTreeFunction } from './TreeActions'
+import { bindActionCreators } from 'redux'
 
-export default class TreeFunctions extends Component {
+class TreeFunctions extends Component {
+
+  renderTreeFunctions() {
+    return this.props.treeFunction.map(function(func){ 
+      return (
+       <button onClick={() => this.props.selectTreeFunction(func) } key={func.treeFunction} className="action-title">{func.treeFunction}</button> 
+      )
+    }
+   );
+  }
+
   render() {
     return (
       <div className="action-section">
-        <button className="action-title">DEPTH FIRST SEARCH</button>
-        <button className="action-title">BREADTH FIRST SEARCH</button>
-        <button className="action-title">ADD CHILD</button>
-        <button className="action-title">CONTAINS</button>
+        {this.renderTreeFunctions()}
       </div>
     )
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    treeFunction: state.treeFunction
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ selectTreeFunction: selectTreeFunction }, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TreeFunctions)
