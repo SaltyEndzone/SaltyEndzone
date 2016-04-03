@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import Code from '../Code/Code'
-import TreeContains from './TreeCodeSnippets/TreeContains'
-import TreeAddChild from './TreeCodeSnippets/TreeAddChild'
+import TreeContains from './TreeContains'
+import TreeAddChild from './TreeAddChild'
 
 class TreeCode extends Component {
   render() {
