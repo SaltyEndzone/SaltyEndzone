@@ -7,7 +7,7 @@ export default class QueueEnqueue extends Component {
         <div>{'Queue.prototype.enqueue = function(value){'}</div>
         <div className="indent">{'this._storage[this._end++] = value;'}</div>
         <div>{'};'}</div>
-      <div>
+      </div>
     )
   }
 }

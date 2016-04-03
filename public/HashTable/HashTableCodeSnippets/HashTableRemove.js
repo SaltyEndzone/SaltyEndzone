@@ -20,7 +20,7 @@ export default class HashTableRemove extends Component {
         <div className="indent">{'}'}</div>
         <div className="indent">{'return null;'}</div>
         <div>{'};'}</div>
-      <div>
+      </div>
     )
   }
 }

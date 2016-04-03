@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import Code from '../Code/Code'
+
 import TreeContains from './TreeCodeSnippets/TreeContains'
 import TreeAddChild from './TreeCodeSnippets/TreeAddChild'
 

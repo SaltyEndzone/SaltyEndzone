@@ -7,7 +7,7 @@ export default class QueueSize extends Component {
         <div>{'Queue.prototype.size = function(){'}</div>
         <div className="indent">{'return this._end - this._start;'}</div>
         <div>{'};'}</div>
-      <div>
+      </div>
     )
   }
 }
