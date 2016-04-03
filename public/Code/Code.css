@@ -1,5 +1,5 @@
 .code-section {
-  width: 520px;
+  width: 600px;
   height: 300px;
 }
 
@@ -19,4 +19,16 @@
 
 .code-text {
   margin-left: 4vw;
+}
+
+.indent {
+  margin-left: 20px;
+}
+
+.double-indent {
+  margin-left: 40px;
+}
+
+.triple-indent {
+  margin-left: 60px;
 }
