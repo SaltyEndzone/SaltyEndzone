@@ -22,8 +22,8 @@ class LinkedListCode extends Component {
         <button className="code-title">CODE</button>
         <div className="code-text">
         {this.props.linkedlistFunc.linkedlistFunction === 'ADD TO TAIL' ? <LinkedListAddToTail /> : <div></div>}
-        {this.props.linkedlistFunc.linkedlistFunction === 'CONTAINS' ? <LinkedListRemoveHead /> : <div></div>}
-        {this.props.linkedlistFunc.linkedlistFunction === 'REMOVE HEAD' ? <LinkedListContains /> : <div></div>}
+        {this.props.linkedlistFunc.linkedlistFunction === 'CONTAINS' ? <LinkedListContains /> : <div></div>}
+        {this.props.linkedlistFunc.linkedlistFunction === 'REMOVE HEAD' ? <LinkedListRemoveHead /> : <div></div>}
         </div>
       </div>
     )
