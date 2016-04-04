@@ -3,6 +3,7 @@ import { routerReducer as routing } from 'react-router-redux'
 import login from './Login/LoginReducers'
 import { treeFunction, activeTreeFunction } from './Tree/TreeReducers'
 import { stackFunction, activeStackFunction } from './Stack/StackReducers'
+import { queueFunction, activeQueueFunction} from './Queue/QueueReducers'
 
 
 const rootReducer = combineReducers({
@@ -11,7 +12,9 @@ const rootReducer = combineReducers({
   treeFunction: treeFunction,
   activeTreeFunction: activeTreeFunction,
   stackFunction: stackFunction,
-  activeStackFunction: activeStackFunction
+  activeStackFunction: activeStackFunction,
+  queueFunction: queueFunction,
+  activeQueueFunction: activeQueueFunction
 })
 
 export default rootReducer

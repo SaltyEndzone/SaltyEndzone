@@ -3,6 +3,7 @@
 import Queue from '../Queue/Queue'
 import Discussion from '../Discussion/Discussion'
 import Code from '../Code/Code'
+import QueueCode from './QueueCode'
 
 export default class QueuePage extends Component {
   render() {
@@ -13,7 +14,7 @@ export default class QueuePage extends Component {
             <Queue />
           </div>
           <div className="col-md-6">
-            <Code />
+            <QueueCode />
             <Discussion />
           </div>
         </div>
