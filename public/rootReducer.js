@@ -4,6 +4,7 @@ import login from './Login/LoginReducers'
 import { treeFunction, activeTreeFunction } from './Tree/TreeReducers'
 import { stackFunction, activeStackFunction } from './Stack/StackReducers'
 import { queueFunction, activeQueueFunction} from './Queue/QueueReducers'
+import { linkedlistFunction, activeLinkedListFunction} from './LinkedList/LinkedListReducers'
 
 
 const rootReducer = combineReducers({
@@ -14,7 +15,9 @@ const rootReducer = combineReducers({
   stackFunction: stackFunction,
   activeStackFunction: activeStackFunction,
   queueFunction: queueFunction,
-  activeQueueFunction: activeQueueFunction
+  activeQueueFunction: activeQueueFunction,
+  linkedlistFunction: linkedlistFunction,
+  activeLinkedListFunction: activeLinkedListFunction
 })
 
 export default rootReducer
