@@ -5,7 +5,7 @@ import { treeFunction, activeTreeFunction } from './Tree/TreeReducers'
 import { stackFunction, activeStackFunction } from './Stack/StackReducers'
 import { queueFunction, activeQueueFunction} from './Queue/QueueReducers'
 import { linkedlistFunction, activeLinkedListFunction} from './LinkedList/LinkedListReducers'
-
+import { graphFunction, activeGraphFunction } from './Graph/GraphReducers'
 
 const rootReducer = combineReducers({
   routing: routing,
@@ -17,7 +17,9 @@ const rootReducer = combineReducers({
   queueFunction: queueFunction,
   activeQueueFunction: activeQueueFunction,
   linkedlistFunction: linkedlistFunction,
-  activeLinkedListFunction: activeLinkedListFunction
+  activeLinkedListFunction: activeLinkedListFunction,
+  graphFunction: graphFunction,
+  activeGraphFunction: activeGraphFunction
 })
 
 export default rootReducer
