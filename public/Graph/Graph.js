@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Discussion from '../Discussion/Discussion'
 import Code from '../Code/Code'
+import GraphFunctions from './GraphFunctions'
 
 
 export default class Graph extends Component {
@@ -11,15 +12,7 @@ export default class Graph extends Component {
           <button className="dataStructureTitle">GRAPH</button>
             <img className="graph-image" src="http://visualgo.net/img/graphds.gif" />
           <div>
-
-          <div className="action-section">
-            <button className="action-title">CONTAINS</button>
-            <button className="action-title">ADD NODE</button>
-            <button className="action-title">REMOVE NODE</button>
-            <button className="action-title">HAS EDGE</button>
-            <button className="action-title">ADD EDGE</button>
-            <button className="action-title">REMOVE EDGE</button>
-          </div>
+          <GraphFunctions />
         </div>
         </div>
     )

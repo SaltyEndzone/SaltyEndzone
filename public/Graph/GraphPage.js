@@ -3,6 +3,7 @@
 import Graph from '../Graph/Graph'
 import Discussion from '../Discussion/Discussion'
 import Code from '../Code/Code'
+import GraphCode from './GraphCode'
 
 export default class GraphPage extends Component {
   render() {
@@ -13,7 +14,7 @@ export default class GraphPage extends Component {
             <Graph />
           </div>
           <div className="col-md-6">
-            <Code />
+            <GraphCode />
             <Discussion />
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Discussion from '../Discussion/Discussion'
 import Code from '../Code/Code'
+import HashTableFunctions from './HashTableFunctions'
 
 
 export default class HashTable extends Component {
@@ -11,13 +12,7 @@ export default class HashTable extends Component {
           <button className="dataStructureTitle">HASH TABLE</button>
             <img className="hashtable-image" src="http://visualgo.net/img/hashtable.gif" />
           <div>
-
-          <div className="action-section">
-            <button className="action-title">INSERT</button>
-            <button className="action-title">RETRIEVE</button>
-            <button className="action-title">REMOVE</button>
-            <button className="action-title">RESIZE</button>
-          </div>
+          <HashTableFunctions />
         </div>
         </div>
     )

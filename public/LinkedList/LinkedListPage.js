@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import LinkedList from '../LinkedList/LinkedList'
 import Discussion from '../Discussion/Discussion'
 import Code from '../Code/Code'
+import LinkedListCode from './LinkedListCode'
 
 export default class LinkedListPage extends Component {
   render() {
@@ -13,7 +14,7 @@ export default class LinkedListPage extends Component {
             <LinkedList />
           </div>
           <div className="col-md-6">
-            <Code />
+            <LinkedListCode />
             <Discussion />
           </div>
         </div>
