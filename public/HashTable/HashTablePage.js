@@ -3,6 +3,7 @@
 import HashTable from '../HashTable/HashTable'
 import Discussion from '../Discussion/Discussion'
 import Code from '../Code/Code'
+import HashTableCode from './HashTableCode'
 
 export default class HashTablePage extends Component {
   render() {
@@ -13,7 +14,7 @@ export default class HashTablePage extends Component {
             <HashTable />
           </div>
           <div className="col-md-6">
-            <Code />
+            <HashTableCode />
             <Discussion />
           </div>
         </div>

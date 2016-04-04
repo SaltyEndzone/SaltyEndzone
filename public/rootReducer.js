@@ -6,6 +6,7 @@ import { stackFunction, activeStackFunction } from './Stack/StackReducers'
 import { queueFunction, activeQueueFunction} from './Queue/QueueReducers'
 import { linkedlistFunction, activeLinkedListFunction} from './LinkedList/LinkedListReducers'
 import { graphFunction, activeGraphFunction } from './Graph/GraphReducers'
+import { hashtableFunction, activeHashTableFunction} from './HashTable/HashTableReducers'
 
 const rootReducer = combineReducers({
   routing: routing,
@@ -19,7 +20,9 @@ const rootReducer = combineReducers({
   linkedlistFunction: linkedlistFunction,
   activeLinkedListFunction: activeLinkedListFunction,
   graphFunction: graphFunction,
-  activeGraphFunction: activeGraphFunction
+  activeGraphFunction: activeGraphFunction,
+  hashtableFunction: hashtableFunction,
+  activeHashTableFunction: activeHashTableFunction
 })
 
 export default rootReducer

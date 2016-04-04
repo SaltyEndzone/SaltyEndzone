@@ -1,15 +1,11 @@
 export function graphFunction() {
   return [
-    { graphFunction: 'ADD EDGE'},
-    { graphFunction: 'ADD NODE'},
-    { graphFunction: 'CONTAINS'},
-    { graphFunction: 'HAS EDGE'},
-    { graphFunction: 'REMOVE EDGE'},
-    { graphFunction: 'REMOVE NODE'},
-
-
-
-
+    { graphFunction: 'ADD EDGE' },
+    { graphFunction: 'ADD NODE' },
+    { graphFunction: 'CONTAINS' },
+    { graphFunction: 'HAS EDGE' },
+    { graphFunction: 'REMOVE EDGE' },
+    { graphFunction: 'REMOVE NODE' }
   ]
 }
 
