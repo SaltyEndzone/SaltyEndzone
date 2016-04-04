@@ -1,8 +1,8 @@
 export function linkedlistFunction() {
   return [
     { linkedlistFunction: 'ADD TO TAIL'},
-    { linkedlistFunction: 'CONTAINS'},
-    { linkedlistFunction: 'REMOVE HEAD'}
+    { linkedlistFunction: 'REMOVE HEAD'},
+    { linkedlistFunction: 'CONTAINS'}
   ]
 }
 
