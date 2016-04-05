@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class HashTableRetrieve extends Component {
   render() {
@@ -16,6 +16,6 @@ export default class HashTableRetrieve extends Component {
         <div className="indent">{'return null;'}</div>
         <div>{'};'}</div>
       </div>
-    )
+    );
   }
 }

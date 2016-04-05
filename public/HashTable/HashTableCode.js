@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-import HashTableInsert from './HashTableCodeSnippets/HashTableInsert'
-import HashTableRemove from './HashTableCodeSnippets/HashTableRemove'
-import HashTableResize from './HashTableCodeSnippets/HashTableResize'
-import HashTableRetrieve from './HashTableCodeSnippets/HashTableRetrieve'
+import HashTableInsert from './HashTableCodeSnippets/HashTableInsert';
+import HashTableRemove from './HashTableCodeSnippets/HashTableRemove';
+import HashTableResize from './HashTableCodeSnippets/HashTableResize';
+import HashTableRetrieve from './HashTableCodeSnippets/HashTableRetrieve';
 
 class HashTableCode extends Component {
   render() {
@@ -14,7 +14,7 @@ class HashTableCode extends Component {
           <button className="code-title">CODE</button>
           <div className="code-text">Select an action</div>
         </div>
-      )
+      );
     }
 
     return (
@@ -27,14 +27,14 @@ class HashTableCode extends Component {
         {this.props.hashtableFunc.hashtableFunction === 'RETRIEVE' ? <HashTableRetrieve /> : <div></div>}
         </div>
       </div>
-    )  
+    );
   }
 }
 
 function mapStateToProps(state) {
   return {
     hashtableFunc: state.activeHashTableFunction
-  }
+  };
 }
 
-export default connect(mapStateToProps)(HashTableCode)
+export default connect(mapStateToProps)(HashTableCode);

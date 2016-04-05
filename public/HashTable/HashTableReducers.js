@@ -4,13 +4,13 @@ export function hashtableFunction() {
     { hashtableFunction: 'REMOVE' },
     { hashtableFunction: 'RESIZE' },
     { hashtableFunction: 'RETRIEVE' }
-  ]
+  ];
 }
 
 export function  activeHashTableFunction(state = null, action) {
-  switch(action.type) {
+  switch (action.type) {
     case 'HASHTABLE_FUNCTION_SELECTED':
-    return action.payload
+    return action.payload;
   }
-  return state
+  return state;
 }

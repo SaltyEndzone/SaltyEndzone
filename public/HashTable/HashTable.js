@@ -1,7 +1,5 @@
-import React, { Component } from 'react'
-import Discussion from '../Discussion/Discussion'
-import Code from '../Code/Code'
-import HashTableFunctions from './HashTableFunctions'
+import React, { Component } from 'react';
+import HashTableFunctions from './HashTableFunctions';
 
 
 export default class HashTable extends Component {
@@ -15,6 +13,6 @@ export default class HashTable extends Component {
           <HashTableFunctions />
         </div>
         </div>
-    )
+    );
   }
 }
