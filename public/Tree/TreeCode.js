@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-import TreeContains from './TreeCodeSnippets/TreeContains'
-import TreeAddChild from './TreeCodeSnippets/TreeAddChild'
+import TreeContains from './TreeCodeSnippets/TreeContains';
+import TreeAddChild from './TreeCodeSnippets/TreeAddChild';
 
 class TreeCode extends Component {
   render() {
@@ -13,7 +13,7 @@ class TreeCode extends Component {
           <button className="code-title">CODE</button>
           <div className="code-text">Select an action</div>
         </div>
-      )        
+      );        
     }
 
     return (
@@ -24,14 +24,14 @@ class TreeCode extends Component {
         { this.props.treeFunc.treeFunction === 'CONTAINS' ? <TreeContains /> : <div></div> }
         </div>
       </div>
-    )
+    );
   }
 }
 
 function mapStateToProps(state) {
   return {
     treeFunc: state.activeTreeFunction
-  }
+  };
 }
 
-export default connect(mapStateToProps)(TreeCode)
+export default connect(mapStateToProps)(TreeCode);

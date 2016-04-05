@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class TreeAddChild extends Component {
   render() {
@@ -9,6 +9,6 @@ export default class TreeAddChild extends Component {
         <div className="indent">{'this.children.push(newTree);'}</div>
         <div>{'};'}</div>
       </div>
-    )
+    );
   }
 }

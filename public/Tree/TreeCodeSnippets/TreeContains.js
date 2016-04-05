@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class TreeContains extends Component {
   render() {
@@ -20,6 +20,6 @@ export default class TreeContains extends Component {
         <div className="indent">{'return found;'}</div>
         <div>{'};'}</div>
       </div>
-    )
+    );
   }
 }

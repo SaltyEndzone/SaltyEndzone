@@ -1,8 +1,6 @@
 import { OPEN_LOGIN, CLOSE_LOGIN } from './LoginActions'
 
-export default function login(state = {
-  login: false
-}, action) {
+export default function login(state = {login: false}, action) {
   switch (action.type) {
     case OPEN_LOGIN:
       return Object.assign({}, state, {
