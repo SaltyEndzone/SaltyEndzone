@@ -1,9 +1,8 @@
- import React, { Component } from 'react'
+ import React, { Component } from 'react';
 
-import Graph from '../Graph/Graph'
-import Discussion from '../Discussion/Discussion'
-import Code from '../Code/Code'
-import GraphCode from './GraphCode'
+import Graph from '../Graph/Graph';
+import Discussion from '../Discussion/Discussion';
+import GraphCode from './GraphCode';
 
 export default class GraphPage extends Component {
   render() {
@@ -19,6 +18,6 @@ export default class GraphPage extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

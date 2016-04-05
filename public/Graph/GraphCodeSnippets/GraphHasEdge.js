@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class GraphHasEdge extends Component {
   render() {
@@ -8,6 +8,6 @@ export default class GraphHasEdge extends Component {
         <div className="indent">{'return this._nodes[fromNode].edges.indexOf(toNode) !== -1;'}</div>
         <div>{'};'}</div>
       </div>
-    )
+    );
   }
 }
