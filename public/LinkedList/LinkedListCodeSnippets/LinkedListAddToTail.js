@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class LinkedListAddToTail extends Component {
   render() {
@@ -15,6 +15,6 @@ export default class LinkedListAddToTail extends Component {
         <div className="indent">{'list.tail = newTail;'}</div>
         <div className="indent">{'};'}</div>
       </div>
-    )
+    );
   }
 }

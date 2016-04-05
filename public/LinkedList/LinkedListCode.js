@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-import LinkedListAddToTail from './LinkedListCodeSnippets/LinkedListAddToTail'
-import LinkedListContains from './LinkedListCodeSnippets/LinkedListContains'
-import LinkedListRemoveHead from './LinkedListCodeSnippets/LinkedListRemoveHead'
+import LinkedListAddToTail from './LinkedListCodeSnippets/LinkedListAddToTail';
+import LinkedListContains from './LinkedListCodeSnippets/LinkedListContains';
+import LinkedListRemoveHead from './LinkedListCodeSnippets/LinkedListRemoveHead';
 
 class LinkedListCode extends Component {
   render() {
@@ -14,7 +14,7 @@ class LinkedListCode extends Component {
           <button className="code-title">CODE</button>
           <div className="code-text">Select an action</div>
         </div>
-      )
+      );
     }
 
     return (
@@ -26,14 +26,14 @@ class LinkedListCode extends Component {
         {this.props.linkedlistFunc.linkedlistFunction === 'CONTAINS' ? <LinkedListContains /> : <div></div>}
         </div>
       </div>
-    )
+    );
   }
 }
 
 function mapStateToProps(state) {
   return {
     linkedlistFunc: state.activeLinkedListFunction
-  }
+  };
 }
 
-export default connect(mapStateToProps)(LinkedListCode)
+export default connect(mapStateToProps)(LinkedListCode);
