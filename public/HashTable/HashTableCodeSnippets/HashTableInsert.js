@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class HashTableInsert extends Component {
   render() {
@@ -22,6 +22,6 @@ export default class HashTableInsert extends Component {
         <div className="indent">{'}'}</div>
         <div>{'};'}</div>
       </div>
-    )
+    );
   }
 }

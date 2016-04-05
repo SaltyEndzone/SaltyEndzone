@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class GraphAddEdge extends Component {
   render() {
     return (
-    <div> 
+      <div> 
         <div>{'Graph.prototype.addEdge = function(fromNode, toNode){'}</div>
         <div className="indent">{'if (fromNode === undefined || toNode === undefined) {'}</div> 
         <div className="double-indent">{'return null;'}</div>
@@ -15,7 +15,7 @@ export default class GraphAddEdge extends Component {
         <div className="double-indent">{'this._nodes[toNode].edges.push(fromNode)'}</div>
         <div className="indent">{'};'}</div>
         <div>{'};'}</div>
-    </div>
-    )
+      </div>
+    );
   }
 }

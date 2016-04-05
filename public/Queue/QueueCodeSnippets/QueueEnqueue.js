@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class QueueEnqueue extends Component {
   render() {
@@ -8,6 +8,6 @@ export default class QueueEnqueue extends Component {
         <div className="indent">{'this._storage[this._end++] = value;'}</div>
         <div>{'};'}</div>
       </div>
-    )
+    );
   }
 }

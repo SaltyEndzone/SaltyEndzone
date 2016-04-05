@@ -1,8 +1,8 @@
- import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import Tree from '../Tree/Tree'
-import Discussion from '../Discussion/Discussion'
-import TreeCode from './TreeCode'
+import Tree from '../Tree/Tree';
+import TreeCode from './TreeCode';
+import Discussion from '../Discussion/Discussion';
 
 export default class TreePage extends Component {
   render() {
@@ -18,6 +18,6 @@ export default class TreePage extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

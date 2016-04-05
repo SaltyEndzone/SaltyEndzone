@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class GraphContains extends Component {
   render() {
@@ -8,6 +8,6 @@ export default class GraphContains extends Component {
         <div className="indent">{'return !(this._nodes[node] === undefined);'}</div>
         <div>{'};'}</div>
       </div>
-    )
+    );
   }
 }

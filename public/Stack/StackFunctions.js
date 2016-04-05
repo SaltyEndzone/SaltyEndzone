@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-import { selectStackFunction } from './StackActions'
-import { bindActionCreators } from 'redux'
+import { selectStackFunction } from './StackActions';
+import { bindActionCreators } from 'redux';
 
 class StackFunctions extends Component {
 
@@ -10,7 +10,7 @@ class StackFunctions extends Component {
     return this.props.stackFunction.map( (func) => {  
       return (
        <button onClick={() => this.props.selectStackFunction(func) } key={func.stackFunction} className="action-title">{func.stackFunction}</button> 
-      )
+      );
     }
    );
   }
@@ -20,18 +20,18 @@ class StackFunctions extends Component {
       <div className="action-section">
         {this.renderStackFunctions()}
       </div>
-    )
+    );
   }
 }
 
 function mapStateToProps(state) {
   return {
     stackFunction: state.stackFunction
-  }
+  };
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ selectStackFunction: selectStackFunction }, dispatch)
+  return bindActionCreators({ selectStackFunction: selectStackFunction }, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(StackFunctions)
+export default connect(mapStateToProps, mapDispatchToProps)(StackFunctions);

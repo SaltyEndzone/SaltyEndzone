@@ -3,13 +3,13 @@ export function queueFunction() {
     { queueFunction: 'ENQUEUE'},
     { queueFunction: 'DEQUEUE'},
     { queueFunction: 'SIZE'}
-  ]
+  ];
 }
 
 export function activeQueueFunction(state = null, action) {
-  switch(action.type) {
+  switch (action.type) {
     case 'QUEUE_FUNCTION_SELECTED':
-      return action.payload
+      return action.payload;
   }
-  return state
+  return state;
 }

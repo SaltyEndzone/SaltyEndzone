@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class StackPush extends Component {
   render() {
@@ -9,6 +9,6 @@ export default class StackPush extends Component {
         <div className="indent">{'this._size++;'}</div>
         <div>{'};'}</div>
       </div>
-    )
+    );
   }
 }

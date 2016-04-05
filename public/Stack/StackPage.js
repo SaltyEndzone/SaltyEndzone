@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import Stack from '../Stack/Stack'
-import Discussion from '../Discussion/Discussion'
-import Code from '../Code/Code'
-import StackCode from './StackCode'
+import Stack from '../Stack/Stack';
+import Discussion from '../Discussion/Discussion';
+import StackCode from './StackCode';
 
 export default class StackPage extends Component {
   render() {
@@ -19,6 +18,6 @@ export default class StackPage extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

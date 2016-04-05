@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import LinkedList from '../LinkedList/LinkedList'
-import Discussion from '../Discussion/Discussion'
-import Code from '../Code/Code'
-import LinkedListCode from './LinkedListCode'
+import LinkedList from '../LinkedList/LinkedList';
+import Discussion from '../Discussion/Discussion';
+import LinkedListCode from './LinkedListCode';
 
 export default class LinkedListPage extends Component {
   render() {
@@ -19,6 +18,6 @@ export default class LinkedListPage extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

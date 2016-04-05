@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class HashTableResize extends Component {
   render() {
@@ -19,6 +19,6 @@ export default class HashTableResize extends Component {
         <div className="indent">{'});'}</div>
         <div>{'};'}</div>
       </div>
-    )
+    );
   }
 }

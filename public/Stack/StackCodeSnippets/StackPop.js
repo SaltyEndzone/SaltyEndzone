@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class StackPop extends Component {
   render() {
@@ -11,6 +11,6 @@ export default class StackPop extends Component {
         <div className="indent">{'return result;'}</div>
         <div>{'};'}</div>
       </div>
-    )
+    );
   }
 }

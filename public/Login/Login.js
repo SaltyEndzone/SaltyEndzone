@@ -1,15 +1,15 @@
-import React, { Component } from 'react'
-import { render } from 'react-dom'
+import React, { Component } from 'react';
+import { render } from 'react-dom';
 
-import { Button, Modal } from 'react-bootstrap'
+import { Button, Modal } from 'react-bootstrap';
 
 
 export default class Login extends Component {
   render() {
 
-    const { openLogin, closeLogin, login } = this.props
+    const { openLogin, closeLogin, login } = this.props;
     
-      return (
+    return (
       <div>
         <div className="login-corner">
          <span className="login" onClick={openLogin}>LOGIN</span> 

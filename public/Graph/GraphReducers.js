@@ -6,13 +6,13 @@ export function graphFunction() {
     { graphFunction: 'REMOVE EDGE' },
     { graphFunction: 'HAS EDGE' },
     { graphFunction: 'CONTAINS' }
-  ]
+  ];
 }
 
 export function activeGraphFunction(state = null, action) {
-  switch(action.type) {
+  switch (action.type) {
     case 'GRAPH_FUNCTION_SELECTED':
-    return action.payload
+    return action.payload;
   }
-  return state
+  return state;
 }

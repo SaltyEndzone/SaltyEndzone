@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class TreeAnimation extends Component {
   render() {
     return (
       <div className="animation-section">
-        This is the tree animation box
+        <svg>
+          <circle cx={50} cy={50} r={10} fill="red" />
+        </svg>
       </div>
-    )
+    );
   }
 }
