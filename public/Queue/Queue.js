@@ -1,7 +1,5 @@
-import React, { Component } from 'react'
-import Discussion from '../Discussion/Discussion'
-import Code from '../Code/Code'
-import QueueFunctions from './QueueFunctions'
+import React, { Component } from 'react';
+import QueueFunctions from './QueueFunctions';
 
 export default class Queue extends Component {
   render() {
@@ -14,6 +12,6 @@ export default class Queue extends Component {
           <QueueFunctions />
         </div>
         </div>
-    )
+    );
   }
 }

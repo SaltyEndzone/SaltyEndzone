@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class QueueSize extends Component {
   render() {
@@ -8,6 +8,6 @@ export default class QueueSize extends Component {
         <div className="indent">{'return this._end - this._start;'}</div>
         <div>{'};'}</div>
       </div>
-    )
+    );
   }
 }
