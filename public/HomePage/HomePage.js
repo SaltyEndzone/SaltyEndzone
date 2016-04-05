@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { render } from 'react-dom'
-import { Link } from 'react-router'
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import { Link } from 'react-router';
 
 export default class HomePage extends Component {
  
@@ -34,7 +34,7 @@ export default class HomePage extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
