@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class TreeAnimation extends Component {
   render() {
@@ -8,6 +8,6 @@ export default class TreeAnimation extends Component {
           <circle cx={50} cy={50} r={10} fill="red" />
         </svg>
       </div>
-    )
+    );
   }
 }
