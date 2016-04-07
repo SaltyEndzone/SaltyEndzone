@@ -6,7 +6,7 @@ export default class TreeAnimation extends Component {
       this.state = {
           x: 0,
           y: 0
-        }
+        };
       }
 
       render() {
@@ -17,8 +17,8 @@ export default class TreeAnimation extends Component {
 
         return <svg ref="svg" {...this.props} onMouseMove={this.handleMouseMove.bind(this)}>
           
-          {this.renderEye(cx - radius/3, cy - radius/5, radius/4, strokeWidth)}
-          {this.renderEye(cx + radius/3, cy - radius/5, radius/4, strokeWidth)}
+          {this.renderEye(cx - radius / 3, cy - radius / 5, radius / 4, strokeWidth)};
+          {this.renderEye(cx + radius / 3, cy - radius / 5, radius / 4, strokeWidth)};
           
         </svg>;
       }

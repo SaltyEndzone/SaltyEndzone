@@ -35,3 +35,8 @@ h1 {
 .action-section {
   margin-top: 2vh;
 }
+
+.TreeAnimation {
+  display: inline-block;
+  background: #fffdae;
+}
