@@ -96,7 +96,7 @@ export default class TreeAnimation extends Component {
             </g>
           </g>
 
-          <g className="level-1">
+          <g className="lvl-1">
            <circle id="root" cx="275" cy="50" r="18" stroke="white" strokeWidth="4" fill="#DA523C" />
           </g>
         </svg>
