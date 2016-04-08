@@ -12,3 +12,4 @@ export function activeTreeFunction(state = null, action) {
   }
   return state;
 }
+
