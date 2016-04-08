@@ -4,3 +4,10 @@ export function selectTreeFunction (func) {
     payload: func
   };
 }
+
+export function addNode (func) {
+  return {
+    type: 'ADD_NODE',
+    payload: func
+  };
+}
