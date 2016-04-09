@@ -1,19 +1,6 @@
 import React, { Component } from 'react';
 
 export default class TreeAnimation extends Component {
-
-  addRoot() {
-    return ;
-  }
-
-  addLeftChild() {
-    return ;
-  }
-
-  addRightChild() {
-    return ;
-  }
-
   render() {
     return (
       <div className="tree-image">
