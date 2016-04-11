@@ -1,0 +1,68 @@
+.login-title {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.login-button {
+  height: 50px;
+  text-align: center;
+}
+
+.login-input {
+  margin: auto;
+  width: 225px;
+}
+
+.login-corner {
+  margin-top: -9vh;
+}
+
+.user-input {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.user-input input {
+  padding-left: 30px;
+}
+
+.user-input .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  padding-left: 30px;
+}
+
+.password-input .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.register-button {
+  height: 40px;
+   text-align: center;
+}
+
+.register-link {
+  text-align: center;
+}
+
+.modal-dialog {
+  position: absolute;
+  top: 40%;
+  left: 48.5%;
+  transform: translate(-50%, -50%) !important;
+}
+
+.form-group .glyphicon {
+  color: #99999F;
+}

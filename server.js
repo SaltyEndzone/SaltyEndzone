@@ -4,6 +4,11 @@ var path = require('path');
 var httpProxy = require('http-proxy');
 var publicPath = path.resolve(__dirname, 'public');
 
+
+//JB additions (bodyParser & authrouter)
+var authrouter = require('./public/Login/Auth/authrouter')
+var bodyParser = require('body-parser');
+
 // We need to add a configuration to our proxy server,
 // as we are now proxying outside localhost
 var isProduction = process.env.NODE_ENV === 'production';
@@ -24,6 +29,10 @@ mongoose.connect( dbURI );
 
 //serving our index.html
 app.use(express.static(publicPath));
+
+//JB addition -- //used to parse incoming requests in to JSON no matter what the request type is
+app.use(bodyParser.json({type: '*/*'})); 
+authrouter(app);
 
 //server/compiler.js runs webpack-dev-server which creates the bundle.js which index.html serves
 //the compiler adds some console logs for some extra sugar
