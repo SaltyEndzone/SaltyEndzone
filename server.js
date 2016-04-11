@@ -6,7 +6,7 @@ var publicPath = path.resolve(__dirname, 'public');
 
 
 //JB additions (bodyParser & authrouter)
-var authrouter = require('./public/Login/Auth/authrouter')
+var authrouter = require('./public/Login/Auth/authrouter');
 var bodyParser = require('body-parser');
 
 // We need to add a configuration to our proxy server,
