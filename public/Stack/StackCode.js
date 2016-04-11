@@ -1,13 +1,6 @@
-<<<<<<< HEAD
-
 import React, { Component }   from 'react'
 import { connect }            from 'react-redux'
 
-=======
-import React, { Component }   from 'react'
-import { connect }            from 'react-redux'
-
->>>>>>> a16c6c9ff4456b4be3b5b3b3b3306d5b52cd6722
 import StackPop               from './StackCodeSnippets/StackPop'
 import StackPush              from './StackCodeSnippets/StackPush'
 import StackSize              from './StackCodeSnippets/StackSize'
