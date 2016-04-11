@@ -5,6 +5,8 @@ import Login                      from '../Login/Login';
 import { openLogin, closeLogin }  from '../Login/LoginActions';
 
 
+
+
 export default class App extends Component {  
   constructor(props) {
     super(props);
@@ -37,7 +39,7 @@ export default class App extends Component {
 function mapStateToProps(state) {
   const login = state.login;
   return {
-    login
+    login,
   };
 }
 
