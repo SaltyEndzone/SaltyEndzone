@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router';
+import React, { Component }       from 'react';
+import { Link }                   from 'react-router';
 import { connect }                from 'react-redux';
 import Login                      from '../Login/Login';
 import { openLogin, closeLogin }  from '../Login/LoginActions';

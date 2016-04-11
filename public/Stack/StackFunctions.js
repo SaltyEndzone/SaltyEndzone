@@ -1,26 +1,21 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component }    from 'react';
+import { connect }             from 'react-redux';
 
 import { selectStackFunction } from './StackActions';
-import { bindActionCreators } from 'redux';
+import { bindActionCreators }  from 'redux';
 
 class StackFunctions extends Component {
 
   renderStackFunctions() {
     return this.props.stackFunction.map( (func) => {  
-      return (
-       <button onClick={() => this.props.selectStackFunction(func) } key={func.stackFunction} className="action-title">{func.stackFunction}</button> 
-      );
-    }
-   );
+      return <button onClick={() => this.props.selectStackFunction(func) } key={func.stackFunction} className="action-title">{func.stackFunction}</button>
+    });
   }
 
   render() {
-    return (
-      <div className="action-section">
+    return <div className="action-section">
         {this.renderStackFunctions()}
       </div>
-    );
   }
 }
 
