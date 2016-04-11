@@ -15,5 +15,8 @@ export default class TreePage extends Component {
             <TreeCode />
             <TreeDiscussion />
           </div>
+        </div>
+      </div>
+    );
   }
 }
