@@ -6,7 +6,11 @@ var publicPath = path.resolve(__dirname, 'public');
 
 
 //JB additions (bodyParser & authrouter)
+<<<<<<< 90beda4d68c78b6c17ba08efc3fefb297b99cd5e
 var authrouter = require('./public/Login/Auth/authrouter');
+=======
+var authrouter = require('./public/Login/Auth/authrouter')
+>>>>>>> Local authentication strategy works. Separated out discussion components in to relevant containers.
 var bodyParser = require('body-parser');
 
 // We need to add a configuration to our proxy server,
