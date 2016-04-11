@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-
+import React, { Component }        from 'react';
+import { connect }                 from 'react-redux';
 import { selectHashTableFunction } from './HashTableActions';
-import { bindActionCreators } from 'redux';
+import { bindActionCreators }      from 'redux';
 
 class HashTableFunctions extends Component {
 

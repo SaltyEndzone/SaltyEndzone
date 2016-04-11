@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-
 import { Button, Modal } from 'react-bootstrap';
 
 

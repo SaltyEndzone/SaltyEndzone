@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-
-import HashTableInsert from './HashTableCodeSnippets/HashTableInsert';
-import HashTableRemove from './HashTableCodeSnippets/HashTableRemove';
-import HashTableResize from './HashTableCodeSnippets/HashTableResize';
-import HashTableRetrieve from './HashTableCodeSnippets/HashTableRetrieve';
+import { connect }          from 'react-redux';
+import HashTableInsert      from './HashTableCodeSnippets/HashTableInsert';
+import HashTableRemove      from './HashTableCodeSnippets/HashTableRemove';
+import HashTableResize      from './HashTableCodeSnippets/HashTableResize';
+import HashTableRetrieve    from './HashTableCodeSnippets/HashTableRetrieve';
 
 class HashTableCode extends Component {
   render() {

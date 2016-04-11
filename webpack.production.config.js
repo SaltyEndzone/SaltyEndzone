@@ -13,6 +13,7 @@ var config = {
     path: buildPath,
     filename: 'bundle.js'
   },
+  
   plugins: [
   new webpack.DefinePlugin({
       // A common mistake is not stringifying the "production" string.
@@ -29,6 +30,7 @@ var config = {
          jQuery: "jquery"
      })
   ],
+
   module: {
     loaders: [{
       test: /\.js$/,

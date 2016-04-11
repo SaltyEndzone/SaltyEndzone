@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-
-import LinkedListAddToTail from './LinkedListCodeSnippets/LinkedListAddToTail';
-import LinkedListContains from './LinkedListCodeSnippets/LinkedListContains';
+import { connect }          from 'react-redux';
+import LinkedListAddToTail  from './LinkedListCodeSnippets/LinkedListAddToTail';
+import LinkedListContains   from './LinkedListCodeSnippets/LinkedListContains';
 import LinkedListRemoveHead from './LinkedListCodeSnippets/LinkedListRemoveHead';
 
 class LinkedListCode extends Component {

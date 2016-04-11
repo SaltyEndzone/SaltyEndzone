@@ -2,15 +2,6 @@ import React, { Component } from 'react';
 
 export default class StackAnimation extends Component {
 
-  push() {
-    return;
-  }
-
-  pop() {
-    return;
-  }
-
-
   render() {
     return (
       <div className="stack-image">

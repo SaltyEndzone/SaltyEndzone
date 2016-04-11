@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-
-import LinkedList from '../LinkedList/LinkedList';
-import Discussion from '../Discussion/Discussion';
-import LinkedListCode from './LinkedListCode';
+import LinkedList           from '../LinkedList/LinkedList';
+import Discussion           from '../Discussion/Discussion';
+import LinkedListCode       from './LinkedListCode';
 
 export default class LinkedListPage extends Component {
   render() {

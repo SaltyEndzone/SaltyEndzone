@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HashTableFunctions from './HashTableFunctions';
+import HashTableFunctions   from './HashTableFunctions';
 
 
 export default class HashTable extends Component {

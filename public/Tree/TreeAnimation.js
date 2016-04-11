@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 export default class TreeAnimation extends Component {
+
   render() {
     return (
       <div className="tree-image">

@@ -9,7 +9,7 @@ class TreeFunctions extends Component {
   renderTreeFunctions() {
     return this.props.treeFunction.map( (func) => {  
       return (
-       <button onClick={() => this.props.selectTreeFunction(func) } key={func.treeFunction} className="action-title">{func.treeFunction}</button> 
+       <button onClick={ () => this.props.selectTreeFunction(func) } key={ func.treeFunction } className="action-title">{ func.treeFunction }</button> 
       );
     }
    );
@@ -18,7 +18,7 @@ class TreeFunctions extends Component {
   render() {
     return (
       <div className="action-section">
-        {this.renderTreeFunctions()}
+        { this.renderTreeFunctions() }
       </div>
     );
   }

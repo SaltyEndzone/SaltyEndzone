@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-
+import React, { Component }    from 'react';
+import { connect }             from 'react-redux';
 import { selectGraphFunction } from './GraphActions';
-import { bindActionCreators } from 'redux';
+import { bindActionCreators }  from 'redux';
 
 class GraphFunctions extends Component {
 
@@ -16,11 +15,9 @@ class GraphFunctions extends Component {
 }
 
   render() {
-    return (
-      <div className="action-section">
-      {this.renderGraphFunctions()}
-      </div>
-    );
+    return <div className="action-section">
+            {this.renderGraphFunctions()}
+           </div>
   }
 }
 

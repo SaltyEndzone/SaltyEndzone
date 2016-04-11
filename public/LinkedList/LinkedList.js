@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LinkedListFunctions from './LinkedListFunctions';
+import LinkedListFunctions  from './LinkedListFunctions';
 
 export default class LinkedList extends Component {
   render() {

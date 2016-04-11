@@ -1,14 +1,13 @@
-import React from 'react';
+import React                 from 'react';
 import { Route, IndexRoute } from 'react-router';
-
-import  App from './App/App';
-import HomePage from './HomePage/HomePage';
-import StackPage from './Stack/StackPage';
-import LinkedListPage from './LinkedList/LinkedListPage';
-import TreePage from './Tree/TreePage';
-import QueuePage from './Queue/QueuePage';
-import GraphPage from './Graph/GraphPage';
-import HashTablePage from './HashTable/HashTablePage';
+import App                   from './App/App';
+import HomePage              from './HomePage/HomePage';
+import StackPage             from './Stack/StackPage';
+import LinkedListPage        from './LinkedList/LinkedListPage';
+import TreePage              from './Tree/TreePage';
+import QueuePage             from './Queue/QueuePage';
+import GraphPage             from './Graph/GraphPage';
+import HashTablePage         from './HashTable/HashTablePage';
 
 export default (
     <Route path='/' component={App}>
