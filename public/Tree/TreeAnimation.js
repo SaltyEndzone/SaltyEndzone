@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TreeRoot             from './TreeSVG/TreeRoot'
 
 export default class TreeAnimation extends Component {
 
@@ -84,9 +85,7 @@ export default class TreeAnimation extends Component {
             </g>
           </g>
 
-          <g className="lvl-1">
-           <circle id="root" cx="275" cy="50" r="18" stroke="white" strokeWidth="4" fill="#DA523C" />
-          </g>
+          <TreeRoot />
         </svg>
       </div>
     );

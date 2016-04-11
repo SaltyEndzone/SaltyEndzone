@@ -16,11 +16,9 @@ class TreeFunctions extends Component {
   }
 
   render() {
-    return (
-      <div className="action-section">
-        { this.renderTreeFunctions() }
-      </div>
-    );
+    return <div className="action-section">
+            { this.renderTreeFunctions() }
+           </div>
   }
 }
 
