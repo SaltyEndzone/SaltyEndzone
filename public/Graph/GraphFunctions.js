@@ -16,7 +16,7 @@ class GraphFunctions extends Component {
 
   render() {
     return <div className="action-section">
-            {this.renderGraphFunctions()}
+             {this.renderGraphFunctions()}
            </div>
   }
 }

@@ -6,15 +6,15 @@ import GraphCode            from './GraphCode';
 export default class GraphPage extends Component {
   render() {
     return <div>
-              <div className="row">
-                <div className="col-md-6">
-                  <Graph />
-                </div>
-                <div className="col-md-6">
-                  <GraphCode />
-                  <Discussion />
-                </div>
-              </div>
-            </div>
+             <div className="row">
+               <div className="col-md-6">
+                 <Graph />
+               </div>
+               <div className="col-md-6">
+                 <GraphCode />
+                 <Discussion />
+               </div>
+             </div>
+           </div>
   }
 }
