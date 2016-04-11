@@ -1,4 +1,4 @@
-import { OPEN_LOGIN, CLOSE_LOGIN } from './LoginActions';
+import { OPEN_LOGIN, CLOSE_LOGIN, OPEN_SIGNUP, CLOSE_SIGNUP } from './LoginActions';
 
 export default function login(state = {login: false}, action) {
   switch (action.type) {

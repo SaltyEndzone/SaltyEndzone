@@ -12,4 +12,3 @@ export function closeLogin() {
     type: CLOSE_LOGIN
   };
 }
-
