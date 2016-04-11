@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import Stack from '../Stack/Stack';
 import StackDiscussion from './StackDiscussion';
 import StackCode from './StackCode';
->>>>>>> Local authentication strategy works. Separated out discussion components in to relevant containers.
 
 
 export default class StackPage extends Component {
