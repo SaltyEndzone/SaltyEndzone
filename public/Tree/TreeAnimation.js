@@ -34,7 +34,7 @@ export default class TreeAnimation extends Component {
               <TreeLvl2LeftChild1SVG />
               <TreeLvl1ChildTwoSVG />
               <TreeLvl1ChildOneSVG />
-              <TreeRootSVG />
+              <TreeRootSVG onClick={} />
             </svg>
           </div>
   }
