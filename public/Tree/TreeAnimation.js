@@ -16,7 +16,6 @@ import TreeLvl3LeftChild7SVG  from './TreeSVG/TreeLvl3LeftChild7SVG'
 import TreeLvl3RightChild8SVG from './TreeSVG/TreeLvl3RightChild8SVG'
 
 export default class TreeAnimation extends Component {
-
   render() {
     return <div className="tree-image">
             <svg className="tree-animation-background" height="380" width="550">
