@@ -41,7 +41,7 @@ export default class App extends Component {
 function mapStateToProps(state) {
   const login = state.login;
   return {
-    login,
+    login
   };
 }
 
