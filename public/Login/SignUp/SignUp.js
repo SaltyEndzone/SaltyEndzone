@@ -3,6 +3,8 @@ import { render } from 'react-dom';
 
 import { Button, Modal } from 'react-bootstrap';
 
+import signup from './Auth/controllers/authentication'
+
 
 export default class Signup extends Component {
   render() {
@@ -12,7 +14,7 @@ export default class Signup extends Component {
     return (
           <Modal className="modal-dialog" bsSize="small" show={signUp.signUp} closeTimeoutMS={150}>
             <Modal.Body>
-            <Modal.Title className="login-title">Data.Structrz Sign-Up</Modal.Title>
+            <Modal.Title className="login-title">Data.Structrz Sign Up</Modal.Title>
             </Modal.Body>
             <div className="login-input">
               <div className="form-group">
