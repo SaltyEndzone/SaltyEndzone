@@ -1,8 +1,12 @@
+
 import React, { Component }      from 'react';
 import { Link }                  from 'react-router';
 import { connect }               from 'react-redux';
 import Login                     from '../Login/Login';
+
 import { openLogin, closeLogin } from '../Login/LoginActions';
+
+
 
 
 export default class App extends Component {  
@@ -37,7 +41,7 @@ export default class App extends Component {
 function mapStateToProps(state) {
   const login = state.login;
   return {
-    login
+    login,
   };
 }
 

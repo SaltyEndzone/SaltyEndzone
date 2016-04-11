@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Stack from '../Stack/Stack';
-import Discussion from '../Discussion/Discussion';
+import StackDiscussion from './StackDiscussion';
 import StackCode from './StackCode';
 
 
@@ -15,7 +15,7 @@ export default class StackPage extends Component {
           </div>
           <div className="col-md-6">
             <StackCode />
-            <Discussion />
+            <StackDiscussion />
           </div>
         </div>
       </div>
