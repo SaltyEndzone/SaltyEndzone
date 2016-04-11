@@ -15,11 +15,9 @@ class LinkedListFunctions extends Component {
 }
 
   render() {
-    return (
-      <div className="action-section">
-      {this.renderLinkedListFunctions()}
-      </div>
-    );
+    return <div className="action-section">
+            {this.renderLinkedListFunctions()}
+           </div>
   }
 }
 

@@ -5,18 +5,16 @@ import LinkedListCode       from './LinkedListCode';
 
 export default class LinkedListPage extends Component {
   render() {
-    return ( 
-      <div>
-        <div className="row">
-          <div className="col-md-6">
-            <LinkedList />
-          </div>
-          <div className="col-md-6">
-            <LinkedListCode />
-            <Discussion />
-          </div>
-        </div>
-      </div>
-    );
+    return <div>
+              <div className="row">
+                <div className="col-md-6">
+                  <LinkedList />
+                </div>
+                <div className="col-md-6">
+                  <LinkedListCode />
+                  <Discussion />
+                </div>
+              </div>
+            </div>
   }
 }
