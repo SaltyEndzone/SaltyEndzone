@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router';
-import { connect }                from 'react-redux';
-import Login                      from '../Login/Login';
-import { openLogin, closeLogin }  from '../Login/LoginActions';
+import React, { Component }      from 'react';
+import { Link }                  from 'react-router';
+import { connect }               from 'react-redux';
+import Login                     from '../Login/Login';
+import { openLogin, closeLogin } from '../Login/LoginActions';
 
 
 export default class App extends Component {  
@@ -23,14 +23,14 @@ export default class App extends Component {
 
   render() {
     const { children, login } = this.props;
-    return <div>
-      <div className="menu-bar">
-        <img className="logo" src="http://visualgo.net/img/heap.gif" />
-        <Link to={'home'}><span className="title">Data.Structrz</span></Link>
-        <Login openLogin={this.openLogin} closeLogin={this.closeLogin} login={login} />
-      </div>
-      {children}
-    </div>
+    return  <div>
+              <div className="menu-bar">
+                <img className="logo" src="http://visualgo.net/img/heap.gif" />
+                <Link to={'home'}><span className="title">Data.Structrz</span></Link>
+                <Login openLogin={this.openLogin} closeLogin={this.closeLogin} login={login} />
+              </div>
+              {children}
+            </div>
   }
 }
 

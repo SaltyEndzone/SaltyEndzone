@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-
-import LinkedListAddToTail from './LinkedListCodeSnippets/LinkedListAddToTail';
-import LinkedListContains from './LinkedListCodeSnippets/LinkedListContains';
+import { connect }          from 'react-redux';
+import LinkedListAddToTail  from './LinkedListCodeSnippets/LinkedListAddToTail';
+import LinkedListContains   from './LinkedListCodeSnippets/LinkedListContains';
 import LinkedListRemoveHead from './LinkedListCodeSnippets/LinkedListRemoveHead';
 
 class LinkedListCode extends Component {
@@ -17,16 +16,14 @@ class LinkedListCode extends Component {
       );
     }
 
-    return (
-      <div className="code-section">
-        <button className="code-title">CODE</button>
-        <div className="code-text">
-        {this.props.linkedlistFunc.linkedlistFunction === 'ADD TO TAIL' ? <LinkedListAddToTail /> : <div></div>}
-        {this.props.linkedlistFunc.linkedlistFunction === 'REMOVE HEAD' ? <LinkedListRemoveHead /> : <div></div>}
-        {this.props.linkedlistFunc.linkedlistFunction === 'CONTAINS' ? <LinkedListContains /> : <div></div>}
-        </div>
-      </div>
-    );
+    return <div className="code-section">
+            <button className="code-title">CODE</button>
+            <div className="code-text">
+            {this.props.linkedlistFunc.linkedlistFunction === 'ADD TO TAIL' ? <LinkedListAddToTail /> : <div></div>}
+            {this.props.linkedlistFunc.linkedlistFunction === 'REMOVE HEAD' ? <LinkedListRemoveHead /> : <div></div>}
+            {this.props.linkedlistFunc.linkedlistFunction === 'CONTAINS' ? <LinkedListContains /> : <div></div>}
+            </div>
+          </div>
   }
 }
 

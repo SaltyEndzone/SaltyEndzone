@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-
-import TreeContains from './TreeCodeSnippets/TreeContains';
-import TreeAddChild from './TreeCodeSnippets/TreeAddChild';
+import { connect }          from 'react-redux';
+import TreeContains         from './TreeCodeSnippets/TreeContains';
+import TreeAddChild         from './TreeCodeSnippets/TreeAddChild';
 
 class TreeCode extends Component {
   render() {
@@ -16,15 +15,13 @@ class TreeCode extends Component {
       );        
     }
 
-    return (
-      <div className="code-section">
-        <button className="code-title">CODE</button>
-        <div className="code-text">
-        { this.props.treeFunc.treeFunction === 'ADD CHILD' ? <TreeAddChild /> : <div></div> }
-        { this.props.treeFunc.treeFunction === 'CONTAINS' ? <TreeContains /> : <div></div> }
-        </div>
-      </div>
-    );
+    return <div className="code-section">
+             <button className="code-title">CODE</button>
+             <div className="code-text">
+               { this.props.treeFunc.treeFunction === 'ADD CHILD' ? <TreeAddChild /> : <div></div> }
+               { this.props.treeFunc.treeFunction === 'CONTAINS' ? <TreeContains /> : <div></div> }
+             </div>
+           </div>
   }
 }
 

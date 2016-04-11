@@ -11,3 +11,4 @@ export function addNode (func) {
     payload: func
   };
 }
+

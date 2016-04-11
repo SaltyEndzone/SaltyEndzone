@@ -1,12 +1,12 @@
-import { combineReducers } from 'redux'
-import { routerReducer as routing } from 'react-router-redux'
-import login from './Login/LoginReducers'
-import { treeFunction, activeTreeFunction } from './Tree/TreeReducers'
-import { stackFunction, activeStackFunction } from './Stack/StackReducers'
-import { queueFunction, activeQueueFunction} from './Queue/QueueReducers'
-import { linkedlistFunction, activeLinkedListFunction} from './LinkedList/LinkedListReducers'
-import { graphFunction, activeGraphFunction } from './Graph/GraphReducers'
-import { hashtableFunction, activeHashTableFunction} from './HashTable/HashTableReducers'
+import { combineReducers }                             from 'redux';
+import { routerReducer as routing }                    from 'react-router-redux';
+import login                                           from './Login/LoginReducers';
+import { treeFunction, activeTreeFunction }            from './Tree/TreeReducers';
+import { stackFunction, activeStackFunction }          from './Stack/StackReducers';
+import { queueFunction, activeQueueFunction}           from './Queue/QueueReducers';
+import { linkedlistFunction, activeLinkedListFunction} from './LinkedList/LinkedListReducers';
+import { graphFunction, activeGraphFunction }          from './Graph/GraphReducers';
+import { hashtableFunction, activeHashTableFunction}   from './HashTable/HashTableReducers';
 
 const rootReducer = combineReducers({
   routing: routing,

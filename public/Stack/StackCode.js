@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-import StackPop from './StackCodeSnippets/StackPop'
-import StackPush from './StackCodeSnippets/StackPush'
-import StackSize from './StackCodeSnippets/StackSize'
+import StackPop from './StackCodeSnippets/StackPop';
+import StackPush from './StackCodeSnippets/StackPush';
+import StackSize from './StackCodeSnippets/StackSize';
 
 class StackCode extends Component {
   render() {
@@ -14,7 +14,7 @@ class StackCode extends Component {
           <button className="code-title">CODE</button>
           <div className="code-text">Select an action</div>
         </div>
-      )        
+      );        
     }
 
     return (
@@ -26,14 +26,14 @@ class StackCode extends Component {
         { this.props.stackFunc.stackFunction === 'SIZE' ? <StackSize /> : <div></div> }
         </div>
       </div>
-    )
+    );
   }
 }
 
 function mapStateToProps(state) {
   return {
     stackFunc: state.activeStackFunction
-  }
+  };
 }
 
-export default connect(mapStateToProps)(StackCode)    
+export default connect(mapStateToProps)(StackCode);  

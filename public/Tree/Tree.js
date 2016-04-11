@@ -6,14 +6,12 @@ import TreeFunctions from './TreeFunctions';
 
 export default class Tree extends Component {
   render() {
-    return (
-        <div className="col-md-6">
-          <button className="dataStructureTitle">TREE</button>
-          <div>
-            <TreeAnimation />
-            <TreeFunctions />
-          </div>
-        </div>
-    );
+    return <div className="col-md-6">
+             <button className="dataStructureTitle">TREE</button>
+             <div>
+               <TreeAnimation />
+               <TreeFunctions />
+             </div>
+           </div>
   }
 }

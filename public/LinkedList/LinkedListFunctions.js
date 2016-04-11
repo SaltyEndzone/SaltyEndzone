@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-
+import React, { Component }         from 'react';
+import { connect }                  from 'react-redux';
 import { selectLinkedListFunction } from './LinkedListActions';
-import { bindActionCreators } from 'redux';
+import { bindActionCreators }       from 'redux';
 
 class LinkedListFunctions extends Component {
 
@@ -16,11 +15,9 @@ class LinkedListFunctions extends Component {
 }
 
   render() {
-    return (
-      <div className="action-section">
-      {this.renderLinkedListFunctions()}
-      </div>
-    );
+    return <div className="action-section">
+            {this.renderLinkedListFunctions()}
+           </div>
   }
 }
 
