@@ -1,7 +1,8 @@
 //data model for user which has email and password
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt-nodejs')
+
 
 // Define our model
 const userSchema = new Schema({

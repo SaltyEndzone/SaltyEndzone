@@ -36,6 +36,7 @@ app.use(bodyParser.json({type: '*/*'}));
 authrouter(app);
 discussionrouter(app);
 
+
 //server/compiler.js runs webpack-dev-server which creates the bundle.js which index.html serves
 //the compiler adds some console logs for some extra sugar
 //notice that you will not see a physical bundle.js because webpack-dev-server runs it from memory

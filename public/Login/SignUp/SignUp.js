@@ -5,7 +5,6 @@ import { Button, Modal } from 'react-bootstrap';
 
 
 
-
 export default class SignUp extends Component {
   render() {
 

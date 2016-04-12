@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component }       from 'react';
 import { Link }                   from 'react-router';
 import { connect }                from 'react-redux';
@@ -7,10 +8,14 @@ import { openLogin, closeLogin }  from '../Login/LoginActions';
 
 
 
+<<<<<<< HEAD
 <<<<<<< 50fcdf9fd3e73f598f4c97628eacd1172ffbc637
 =======
 
 >>>>>>> Local authentication strategy works. Separated out discussion components in to relevant containers.
+=======
+
+>>>>>>> f73b74724f98ca57c45cceb481eb2627bbda6b55
 export default class App extends Component {  
   constructor(props) {
     super(props);
