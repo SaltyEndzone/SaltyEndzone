@@ -7,10 +7,6 @@ import { openLogin, closeLogin }  from '../Login/LoginActions';
 
 
 
-<<<<<<< 50fcdf9fd3e73f598f4c97628eacd1172ffbc637
-=======
-
->>>>>>> Local authentication strategy works. Separated out discussion components in to relevant containers.
 export default class App extends Component {  
   constructor(props) {
     super(props);
