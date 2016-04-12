@@ -5,7 +5,7 @@ import { selectTreeFunction } from './TreeActions';
 import { bindActionCreators } from 'redux';
 
 class TreeFunctions extends Component {
-
+  
   renderTreeFunctions() {
     return this.props.treeFunction.map( (func) => {  
       return (
