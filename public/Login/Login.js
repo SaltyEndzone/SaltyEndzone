@@ -5,11 +5,6 @@ import { Button, Modal } from 'react-bootstrap';
 
 export default class Login extends Component {
 
-  handleSubmit() {
-  
-
-  }
-  
   render() {
 
     const { openLogin, closeLogin, login } = this.props;
