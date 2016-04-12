@@ -41,9 +41,6 @@ module.exports = {
 
     ]
   },
-  resolve: {
-      extensions: ['', '.js', '.jsx', '.node']
-  },
   //Since we're running Webpack from our server, need to manually add the
   //Hot Replacement plugin
   plugins: [
