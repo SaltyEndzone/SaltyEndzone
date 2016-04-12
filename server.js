@@ -7,6 +7,7 @@ var publicPath = path.resolve(__dirname, 'public');
 
 //JB additions (bodyParser & authrouter)
 var authrouter = require('./public/Login/Auth/authrouter');
+var discussionrouter = require('./public/Discussion/discussionrouter');
 var bodyParser = require('body-parser');
 
 // We need to add a configuration to our proxy server,
@@ -33,6 +34,7 @@ app.use(express.static(publicPath));
 //JB addition -- //used to parse incoming requests in to JSON no matter what the request type is
 app.use(bodyParser.json({type: '*/*'})); 
 authrouter(app);
+discussionrouter(app);
 
 //server/compiler.js runs webpack-dev-server which creates the bundle.js which index.html serves
 //the compiler adds some console logs for some extra sugar
@@ -58,6 +60,11 @@ proxy.on('error', function(e) {
 app.get('/*', function(req, res) {
   res.sendFile(publicPath + '/index.html');
 });
+
+//added route for posting comments
+app.post('/postComment', function(req, res) {
+
+})
 
 
 app.listen(port, function () {
