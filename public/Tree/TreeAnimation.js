@@ -16,14 +16,24 @@ import TreeLvl3LeftChild7SVG  from './TreeSVG/TreeLvl3LeftChild7SVG';
 import TreeLvl3RightChild8SVG from './TreeSVG/TreeLvl3RightChild8SVG';
 
 export default class TreeAnimation extends Component {
-  selectRoot () {
-    console.log('clicked root');
-  }
-
   render() {
     return <div className="tree-image">
             <svg className="tree-animation-background" height="380" width="550">
-              <TreeRootSVG onClick={this.selectRoot} />
+              <TreeLvl3RightChild8SVG />
+              <TreeLvl3LeftChild7SVG /> 
+              <TreeLvl3RightChild6SVG />
+              <TreeLvl3LeftChild5SVG />
+              <TreeLvl3RightChild4SVG />
+              <TreeLvl3LeftChild3SVG />
+              <TreeLvl3RightChild2SVG />
+              <TreeLvl3LeftChild1SVG />
+              <TreeLvl2RightChild4SVG />
+              <TreeLvl2LeftChild3SVG />
+              <TreeLvl2RightChild2SVG />
+              <TreeLvl2LeftChild1SVG />
+              <TreeLvl1ChildTwoSVG />
+              <TreeLvl1ChildOneSVG />            
+              <TreeRootSVG />
             </svg>
           </div>
   }

@@ -4,3 +4,9 @@ export function selectLinkedListFunction (func) {
     payload: func
   };
 }
+
+export function linkedListAddTail () {
+  return {
+    type: 'ADD_TO_TAIL'
+  }
+}
