@@ -5,12 +5,15 @@ import { selectTreeFunction } from './TreeActions';
 import { bindActionCreators } from 'redux';
 
 class TreeFunctions extends Component {
+  otherFunction (func) {
+    console.dir('other function');
+  }
 
   renderTreeFunctions() {
     return this.props.treeFunction.map( (func) => {  
       return (
        <button onClick={ () => (this.props.selectTreeFunction(func),
-                               console.log('clicked treefunction') ) } 
+                               this.otherFunction(func) ) } 
                key={ func.treeFunction } 
                className="action-title">{ func.treeFunction }</button> 
       );
