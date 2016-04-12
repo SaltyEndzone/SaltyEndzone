@@ -61,10 +61,6 @@ app.get('/*', function(req, res) {
   res.sendFile(publicPath + '/index.html');
 });
 
-//added route for posting comments
-app.post('/postComment', function(req, res) {
-
-})
 
 
 app.listen(port, function () {
