@@ -3,8 +3,6 @@ import { render } from 'react-dom';
 import { Button, Modal } from 'react-bootstrap';
 
 
-
-
 export default class Login extends Component {
 
   render() {

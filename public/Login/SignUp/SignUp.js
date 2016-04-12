@@ -3,8 +3,6 @@ import { render } from 'react-dom';
 
 import { Button, Modal } from 'react-bootstrap';
 
-import signup from './Auth/controllers/authentication'
-
 
 
 
