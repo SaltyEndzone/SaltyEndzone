@@ -6,7 +6,7 @@ export default class TreeRootSVG extends Component {
   }
 
   render() {
-    return <svg onClick={ this.selectRoot } >
+    return <svg>
              <circle id="root" cx="275" cy="50" r="18" stroke="white" strokeWidth="4" fill="#DA523C" />
            </svg>
   }
