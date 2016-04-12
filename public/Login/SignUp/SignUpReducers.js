@@ -1,15 +1,15 @@
 import {  OPEN_SIGNUP, CLOSE_SIGNUP } from './SignUpActions';
 
 
-export default function signUp(state = {signUp: false}, action) {
+export default function signUpBox(state = {signUpBox: false}, action) {
   switch (action.type) {
     case OPEN_SIGNUP:
       return Object.assign({}, state, {
-        signUp: true
+        signUpBox: true
       });
     case CLOSE_SIGNUP:
       return Object.assign({}, state, {
-        signUp: false,
+        signUpBox: false,
       });
     default:
       return state;
