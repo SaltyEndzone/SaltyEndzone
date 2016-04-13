@@ -3,6 +3,7 @@ import { OPEN_LOGIN, CLOSE_LOGIN } from './LoginActions';
 export default function login(state = {login: false}, action) {
   switch (action.type) {
     case OPEN_LOGIN:
+    console.log(state);
       return Object.assign({}, state, {
         login: true
       });

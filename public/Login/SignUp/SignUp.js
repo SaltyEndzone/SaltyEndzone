@@ -29,7 +29,7 @@ export default class SignUp extends Component {
               </div>
             </div>
             <div className="login-button">
-              <Button className="btn btn-info" onClick={}>Join Data.Structrz</Button>
+              <Button className="btn btn-info">Join Data.Structrz</Button>
             </div>
           </Modal>
     );

@@ -5,10 +5,15 @@ import { Button, Modal } from 'react-bootstrap';
 
 export default class Login extends Component {
 
+  openSignUpModal () {
+    closeLogin();
+    openSignUp();
+  }
+  
   render() {
+    const { openLogin, closeLogin, login, openSignUp } = this.props;
 
-    const { openLogin, closeLogin, login } = this.props;
-    
+
     return (
       <div>
         <div className="login-corner">
@@ -34,7 +39,7 @@ export default class Login extends Component {
               <Button className="btn btn-info" onClick={closeLogin}>Welcome Back!</Button>
             </div>
             <div className="register-button">
-              <a className="register-link" ui-sref="register" onClick={closeLogin}>Not a member? Sign up!</a> 
+              <a className="register-link" ui-sref="register" onClick={closeLogin, this.openSignUpModal}>Not a member? Sign up!</a> 
             </div>
           </Modal>
       </div>
