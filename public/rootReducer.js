@@ -8,6 +8,7 @@ import { linkedlistFunction, activeLinkedListFunction} from './LinkedList/Linked
 import { graphFunction, activeGraphFunction }          from './Graph/GraphReducers';
 import { hashtableFunction, activeHashTableFunction}   from './HashTable/HashTableReducers';
 
+
 const rootReducer = combineReducers({
   routing: routing,
   login: login,

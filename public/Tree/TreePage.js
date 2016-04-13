@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Tree                 from '../Tree/Tree';
-import TreeCode             from './TreeCode';
-import Discussion           from '../Discussion/Discussion';
+import Tree from '../Tree/Tree';
+import TreeCode from './TreeCode';
+import TreeDiscussion from './TreeDiscussion';
 
 export default class TreePage extends Component {
   render() {
@@ -12,9 +12,9 @@ export default class TreePage extends Component {
               </div>
               <div className="col-md-6">
                 <TreeCode />
-                <Discussion />
+                <TreeDiscussion />
+              </div>
               </div>
             </div>
-          </div>
-  }
-}
+      }
+    }
