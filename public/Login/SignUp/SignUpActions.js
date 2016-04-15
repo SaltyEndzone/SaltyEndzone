@@ -1,15 +1,35 @@
-export const OPEN_SIGNUP = 'OPEN_SIGNUP';
-export const CLOSE_SIGNUP = 'CLOSE_SIGNUP';
+import { browserHistory } from 'react-router'
 
-
-export function openSignUp() {
-  return {
-    type: OPEN_SIGNUP
-  };
+export function SignUp(email, password) {
+  return dispatch=> {
+    return fetch('/signup', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        email,
+        password
+      })
+    }).then(response.json())
+    .then((res) => {
+      if (res.token) {
+        return dispatch(loginSuccess())
+      } else {
+        return dispatch(registrationError())
+      }
+    })
+  }
 }
 
-export function closeSignUp() {
+export function processRegistration() {
   return {
-    type: CLOSE_SIGNUP
-  };
+    type: PROCESSING_REGISTRATION
+  }
+}
+
+export function registrationError() {
+  return {
+    type: USER_REGISTRATION_ERROR
+  }
 }
