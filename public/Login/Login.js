@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import { Button, Modal } from 'react-bootstrap';
-
-import { Link } from 'react-router';
+import { render }           from 'react-dom';
+import { Button, Modal }    from 'react-bootstrap';
+import { Link }             from 'react-router';
 
 
 export default class Login extends Component {
@@ -12,7 +11,7 @@ export default class Login extends Component {
     openSignUp();
   }
 
-    handleSubmit(e) {
+  handleSubmit(e) {
     e.preventDefault();
     this.props.login(this.username.value, this.password.value);
     this.username.value = ''
@@ -21,7 +20,6 @@ export default class Login extends Component {
   
   render() {
     const { openLogin, closeLogin, login, openSignUp } = this.props;
-
 
     return (
       <div>

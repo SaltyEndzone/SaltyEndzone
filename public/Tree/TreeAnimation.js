@@ -1,4 +1,5 @@
 import React, { Component }   from 'react';
+import { connect }            from 'react-redux';
 import TreeRootSVG            from './TreeSVG/TreeRootSVG';
 import TreeLvl1ChildOneSVG    from './TreeSVG/TreeLvl1ChildOneSVG';
 import TreeLvl1ChildTwoSVG    from './TreeSVG/TreeLvl1ChildTwoSVG';
@@ -15,7 +16,16 @@ import TreeLvl3RightChild6SVG from './TreeSVG/TreeLvl3RightChild6SVG';
 import TreeLvl3LeftChild7SVG  from './TreeSVG/TreeLvl3LeftChild7SVG';
 import TreeLvl3RightChild8SVG from './TreeSVG/TreeLvl3RightChild8SVG';
 
-export default class TreeAnimation extends Component {
+class TreeAnimation extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(node) {
+    
+  }
+
   render() {
     return <div className="tree-image">
             <svg className="tree-animation-background" height="380" width="550">
@@ -38,5 +48,8 @@ export default class TreeAnimation extends Component {
           </div>
   }
 }
+
+
+export default connect()(TreeAnimation);
 
     

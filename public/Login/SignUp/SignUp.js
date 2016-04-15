@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { SignUp } from './SignUpActions'
-import SignUpPage from './SignUpPage'
+import { connect }          from 'react-redux';
+import { SignUp }           from './SignUpActions'
+import SignUpPage           from './SignUpPage'
+
 
 
 export default class Registration extends Component {

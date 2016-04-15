@@ -1,4 +1,4 @@
-const initialState = {
+module.exports = {
   '0': {
     shown: false,
     selected: false,
@@ -80,54 +80,3 @@ const initialState = {
     children: []
   }
 }
-
-export function treeFunction() {
-  return [
-    { treeFunction: 'ADD CHILD'},
-    { treeFunction: 'CONTAINS'}
-  ];
-}
-
-export function activeTreeFunction(state = null, action) {
-  switch (action.type) {
-    case 'TREE_FUNCTION_SELECTED':
-      return action.payload;
-  }
-  return state;
-}
-
-// export function treeLayout () {
-//   return {
-//     '1': children: []
-//   }
-// }
-
-export function addRoot( state = { root: false }, node, action) {
-  switch (action.type) {
-    case 'ADD_ROOT':
-      return {
-        root: true
-      };
-  }
-}
-
-// export function renderNodes(state = initialState, action) {
-//   switch (action.type) {
-//     case 'SELECT_NODE':
-//       return  {
-//         id: id,
-//         selected: true;
-//       };
-//     case 'ADD_CHILD':
-//       return state.map(node => {
-//         if(node.id !== action.id)
-//       }[{
-//         id: action.id++,
-//         children: [],
-//         selected: false
-//       },
-//       ...state]
-//   }
-//   return state;
-// }
-
