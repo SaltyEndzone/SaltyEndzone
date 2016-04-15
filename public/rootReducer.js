@@ -1,6 +1,7 @@
 import { combineReducers }                             from 'redux';
 import { routerReducer as routing }                    from 'react-router-redux';
 import login                                           from './Login/LoginReducers';
+import signUpBox                                       from './Login/SignUp/SignUpReducers';
 import { treeFunction, activeTreeFunction }            from './Tree/TreeReducers';
 import { stackFunction, activeStackFunction }          from './Stack/StackReducers';
 import { queueFunction, activeQueueFunction}           from './Queue/QueueReducers';
@@ -12,6 +13,7 @@ import { hashtableFunction, activeHashTableFunction}   from './HashTable/HashTab
 const rootReducer = combineReducers({
   routing: routing,
   login: login,
+  signUpBox: signUpBox,
   treeFunction: treeFunction,
   activeTreeFunction: activeTreeFunction,
   stackFunction: stackFunction,

@@ -1,17 +1,38 @@
-import {  OPEN_SIGNUP, CLOSE_SIGNUP } from './SignUpActions';
-
-
-export default function signUpBox(state = {signUpBox: false}, action) {
+import { PROCESSING_LOGIN, USER_LOGIN_SUCCESS, USER_LOGIN_ERROR, USER_LOGOUT, USER_REGISTRATION_ERROR } from './SignUpActions'
+ 
+export default function user(state = {
+  isLoggedIn: null,
+  loginError: false,
+  processingLogin: false,
+  registrationError: false
+}, action) {
   switch (action.type) {
-    case OPEN_SIGNUP:
+    case PROCESSING_LOGIN:
       return Object.assign({}, state, {
-        signUpBox: true
-      });
-    case CLOSE_SIGNUP:
+        processingLogin: true
+      })
+    case USER_LOGIN_SUCCESS:
       return Object.assign({}, state, {
-        signUpBox: false,
-      });
+        isLoggedIn: action.payload,
+        processingLogin: false,
+        loginError: false,
+        registrationError: false
+      })
+    case USER_LOGIN_ERROR:
+      return Object.assign({}, state, {
+        loginError: true,
+        processingLogin: false
+      })
+    case USER_REGISTRATION_ERROR:
+      return Object.assign({}, state, {
+        registrationError: true
+      })
+    case USER_LOGOUT:
+      return Object.assign({}, state, {
+        isLoggedIn: false
+      })
+      
     default:
-      return state;
+      return state
   }
 }

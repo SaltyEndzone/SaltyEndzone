@@ -8,6 +8,7 @@ import TreePage              from './Tree/TreePage';
 import QueuePage             from './Queue/QueuePage';
 import GraphPage             from './Graph/GraphPage';
 import HashTablePage         from './HashTable/HashTablePage';
+import SignUp                from './Login/SignUp/SignUp';
 
 export default (
     <Route path='/' component={App}>
@@ -19,5 +20,6 @@ export default (
       <Route path='graph' component={GraphPage} ></Route>
       <Route path='hashtable' component={HashTablePage} ></Route>
       <Route path='home' component={HomePage} ></Route>
+      <Route path='signup' component={SignUp} ></Route>
     </Route>
 );
