@@ -7,3 +7,11 @@
 .btn-primary {
   color: white;
 }
+
+.sign-up-button {
+  color: #FFFFFF;
+}
+
+.sign-up-button:hover {
+  color: #EEEEEE;
+}

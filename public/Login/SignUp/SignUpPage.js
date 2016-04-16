@@ -37,7 +37,7 @@ export default class Registration extends Component {
                   <label for="exampleInputFile">Upload a profile photo:</label>
                   <input type="file" id="exampleInputFile"></input>
                 </div>
-                  <button type="submit" id="login-button" className="btn btn-primary" onClick={(e) => this.handleSubmit(e)}><Link to={'home'}>Join Data.Structrz</Link></button>
+                  <button type="submit" id="login-button" className="btn btn-primary" onClick={(e) => this.handleSubmit(e)}><Link className="sign-up-button" to={'home'}>Join Data.Structrz</Link></button>
               </form>
             </div>
           </div>
