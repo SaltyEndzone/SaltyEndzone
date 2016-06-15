@@ -9,7 +9,7 @@ export default class HashTable extends Component {
 
         <div className="col-md-6">
           <button className="dataStructureTitle">HASH TABLE</button>
-            <img className="hashtable-image" src="http://visualgo.net/img/hashtable.gif" />
+            <img className="hashtable-image" src="http://visualgo.net/img/gif/hashtable.gif" />
           <div>
           <HashTableFunctions />
         </div>
