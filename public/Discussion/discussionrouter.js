@@ -4,4 +4,4 @@ module.exports = function(app){
 
   app.post('/discussionBox', commentController.postComment);
 
-  }
+};

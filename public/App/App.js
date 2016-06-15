@@ -25,18 +25,22 @@ export default class App extends Component {
   }
 
   openSignUp () {
-    this.props.dispatch(openSignUp());
+    this.props.dispatch( openSignUp() );
   }
 
   render() {
     const { children, login, signUpBox } = this.props;
     return  <div>
               <div className="menu-bar">
-                <img className="logo" src="http://visualgo.net/img/heap.gif" />
+                <img className="logo" src="http://visualgo.net/img/gif/heap.gif" />
                 <Link to={'home'}><span className="title">Data.Structrz</span></Link>
-                <Login openLogin={this.openLogin} closeLogin={this.closeLogin} login={login} signUpBox={signUpBox} openSignUp={this.openSignUp}  />
+                <Login openLogin={ this.openLogin } 
+                       closeLogin={ this.closeLogin } 
+                       login={ login } 
+                       signUpBox={ signUpBox } 
+                       openSignUp={ this.openSignUp }  />
               </div>
-              {children}
+              { children }
             </div>
   }
 }

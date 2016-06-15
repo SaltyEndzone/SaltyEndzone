@@ -13,3 +13,10 @@ export function activeLinkedListFunction(state = null, action) {
   }
   return state;
 }
+
+export function addToTail(){
+  switch (action.type) {
+    case 'ADD_TO_TAIL':
+      return
+  }
+}

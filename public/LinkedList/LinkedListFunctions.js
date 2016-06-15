@@ -5,10 +5,16 @@ import { bindActionCreators }       from 'redux';
 
 class LinkedListFunctions extends Component {
 
+
   renderLinkedListFunctions() {
+    //maps over linked list function reducers, gets individual clientfunctions
     return this.props.linkedlistFunction.map( (func) => {
       return (
-        <button onClick={() => this.props.selectLinkedListFunction(func) } key={func.linkedlistFunction} className="action-title">{func.linkedlistFunction}</button>
+        //on a click, selects linked list functions
+        <button onClick={ console.dir('clicked linked list'),
+                          () => this.props.selectLinkedListFunction(func)} 
+                key={func.linkedlistFunction} 
+                className="action-title">{func.linkedlistFunction}</button>
         );
     }
   );

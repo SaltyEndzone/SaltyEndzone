@@ -35,3 +35,24 @@ h1 {
 .action-section {
   margin-top: 2vh;
 }
+
+.hashtable-resources {
+  margin-top: 47px;
+}
+
+.hashtable-discussion{
+  margin: 0 auto;
+  width: 800px;
+}
+
+.hashtable-discussion-box {
+  margin: 0 auto;
+  width: 700px;
+  height: 260px;
+}
+
+.comments-box {
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
