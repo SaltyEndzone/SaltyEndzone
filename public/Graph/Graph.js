@@ -6,7 +6,7 @@ export default class Graph extends Component {
   render() {
     return <div className="col-md-6">
              <button className="dataStructureTitle">GRAPH</button>
-             <img className="graph-image" src="http://visualgo.net/img/graphds.gif" />
+             <img className="graph-image" src="http://visualgo.net/img/gif/graphds.gif" />
              <div>
                <GraphFunctions />
              </div>
