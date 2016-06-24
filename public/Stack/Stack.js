@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import StackAnimation       from './StackAnimation';
 import StackFunctions       from './StackFunctions';
 
@@ -8,7 +7,7 @@ export default class Stack extends Component {
     return <div className="col-md-6">
       <button className="dataStructureTitle">STACK</button>
         <div>
-          <StackAnimation />
+          <img className="stack-image" src="http://www.tutorial4us.com/data-structure/images/push-operation.gif" />
           <StackFunctions />
         </div>
       </div>
