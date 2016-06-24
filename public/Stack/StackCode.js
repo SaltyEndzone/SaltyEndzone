@@ -17,12 +17,6 @@ class StackCode extends Component {
       );        
     }
 
-      return <div className="code-section">
-        <button className="code-title">CODE</button>
-        <div className="code-text">Select an action</div>
-      </div>       
-    }
-
     return <div className="code-section">
         <button className="code-title">CODE</button>
         <div className="code-text">
@@ -31,7 +25,6 @@ class StackCode extends Component {
         { this.props.stackFunc.stackFunction === 'SIZE' ? <StackSize /> : <div></div> }
         </div>
       </div>
-    );
   }
 }
 
