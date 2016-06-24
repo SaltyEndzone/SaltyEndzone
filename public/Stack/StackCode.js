@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component }   from 'react'
+import { connect }            from 'react-redux'
 
 import StackPop from './StackCodeSnippets/StackPop';
 import StackPush from './StackCodeSnippets/StackPush';
@@ -17,8 +17,13 @@ class StackCode extends Component {
       );        
     }
 
-    return (
-      <div className="code-section">
+      return <div className="code-section">
+        <button className="code-title">CODE</button>
+        <div className="code-text">Select an action</div>
+      </div>       
+    }
+
+    return <div className="code-section">
         <button className="code-title">CODE</button>
         <div className="code-text">
         { this.props.stackFunc.stackFunction === 'POP' ? <StackPop /> : <div></div> }

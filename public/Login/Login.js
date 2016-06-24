@@ -1,13 +1,26 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import { Button, Modal } from 'react-bootstrap';
+import { render }           from 'react-dom';
+import { Button, Modal }    from 'react-bootstrap';
+import { Link }             from 'react-router';
 
 
 export default class Login extends Component {
-  render() {
 
-    const { openLogin, closeLogin, login } = this.props;
-    
+  openSignUpModal () {
+    closeLogin();
+    openSignUp();
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.login(this.username.value, this.password.value);
+    this.username.value = ''
+    this.password.value= ''
+  }
+  
+  render() {
+    const { openLogin, closeLogin, login, openSignUp } = this.props;
+
     return (
       <div>
         <div className="login-corner">
@@ -21,11 +34,11 @@ export default class Login extends Component {
               <div className="form-group">
                 <div className="user-input">
                   <i className="glyphicon glyphicon-user"></i>
-                  <input type="email" className="form-control" placeholder="Username"/>
+                  <input type="email" className="form-control" placeholder="Username"  ref={node => { this.login = node }}/>
                 </div>
                 <div className="password-input">
                   <i className="glyphicon glyphicon-lock"></i>
-                  <input type="password" className="form-control" placeholder="Password"/>
+                  <input type="password" className="form-control" placeholder="Password" ref={node => { this.password = node }}/>
                 </div>
               </div>
             </div>
@@ -33,7 +46,7 @@ export default class Login extends Component {
               <Button className="btn btn-info" onClick={closeLogin}>Welcome Back!</Button>
             </div>
             <div className="register-button">
-              <a className="register-link" ui-sref="register">Not a member? Sign up!</a> 
+              <Link to={'signup'}><a className="register-link" ui-sref="register" onClick={closeLogin}>Not a member? Sign up!</a></Link> 
             </div>
           </Modal>
       </div>

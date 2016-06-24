@@ -1,21 +1,30 @@
 import React, { Component }   from 'react';
-import TreeRootSVG            from './TreeSVG/TreeRootSVG'
-import TreeLvl1ChildOneSVG    from './TreeSVG/TreeLvl1ChildOneSVG'
-import TreeLvl1ChildTwoSVG    from './TreeSVG/TreeLvl1ChildTwoSVG'
-import TreeLvl2LeftChild1SVG  from './TreeSVG/TreeLvl2LeftChild1SVG'
-import TreeLvl2RightChild2SVG from './TreeSVG/TreeLvl2RightChild2SVG'
-import TreeLvl2LeftChild3SVG  from './TreeSVG/TreeLvl2LeftChild3SVG'
-import TreeLvl2RightChild4SVG from './TreeSVG/TreeLvl2RightChild4SVG'
-import TreeLvl3LeftChild1SVG  from './TreeSVG/TreeLvl3LeftChild1SVG'
-import TreeLvl3RightChild2SVG from './TreeSVG/TreeLvl3RightChild2SVG'
-import TreeLvl3LeftChild3SVG  from './TreeSVG/TreeLvl3LeftChild3SVG'
-import TreeLvl3RightChild4SVG from './TreeSVG/TreeLvl3RightChild4SVG'
-import TreeLvl3LeftChild5SVG  from './TreeSVG/TreeLvl3LeftChild5SVG'
-import TreeLvl3RightChild6SVG from './TreeSVG/TreeLvl3RightChild6SVG'
-import TreeLvl3LeftChild7SVG  from './TreeSVG/TreeLvl3LeftChild7SVG'
-import TreeLvl3RightChild8SVG from './TreeSVG/TreeLvl3RightChild8SVG'
+import { connect }            from 'react-redux';
+import TreeRootSVG            from './TreeSVG/TreeRootSVG';
+import TreeLvl1ChildOneSVG    from './TreeSVG/TreeLvl1ChildOneSVG';
+import TreeLvl1ChildTwoSVG    from './TreeSVG/TreeLvl1ChildTwoSVG';
+import TreeLvl2LeftChild1SVG  from './TreeSVG/TreeLvl2LeftChild1SVG';
+import TreeLvl2RightChild2SVG from './TreeSVG/TreeLvl2RightChild2SVG';
+import TreeLvl2LeftChild3SVG  from './TreeSVG/TreeLvl2LeftChild3SVG';
+import TreeLvl2RightChild4SVG from './TreeSVG/TreeLvl2RightChild4SVG';
+import TreeLvl3LeftChild1SVG  from './TreeSVG/TreeLvl3LeftChild1SVG';
+import TreeLvl3RightChild2SVG from './TreeSVG/TreeLvl3RightChild2SVG';
+import TreeLvl3LeftChild3SVG  from './TreeSVG/TreeLvl3LeftChild3SVG';
+import TreeLvl3RightChild4SVG from './TreeSVG/TreeLvl3RightChild4SVG';
+import TreeLvl3LeftChild5SVG  from './TreeSVG/TreeLvl3LeftChild5SVG';
+import TreeLvl3RightChild6SVG from './TreeSVG/TreeLvl3RightChild6SVG';
+import TreeLvl3LeftChild7SVG  from './TreeSVG/TreeLvl3LeftChild7SVG';
+import TreeLvl3RightChild8SVG from './TreeSVG/TreeLvl3RightChild8SVG';
 
-export default class TreeAnimation extends Component {
+class TreeAnimation extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(node) {
+    
+  }
 
   render() {
     return <div className="tree-image">
@@ -33,11 +42,14 @@ export default class TreeAnimation extends Component {
               <TreeLvl2RightChild2SVG />
               <TreeLvl2LeftChild1SVG />
               <TreeLvl1ChildTwoSVG />
-              <TreeLvl1ChildOneSVG />
+              <TreeLvl1ChildOneSVG />            
               <TreeRootSVG />
             </svg>
           </div>
   }
 }
+
+
+export default connect()(TreeAnimation);
 
     

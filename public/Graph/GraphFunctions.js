@@ -8,7 +8,9 @@ class GraphFunctions extends Component {
   renderGraphFunctions() {
     return this.props.graphFunction.map( (func) => {
       return (
-        <button onClick={() => this.props.selectGraphFunction(func) } key={func.graphFunction} className="action-title">{func.graphFunction}</button>
+        <div className="function-wrapper">
+          <button onClick={() => this.props.selectGraphFunction(func) } key={func.graphFunction} className="action-title">{func.graphFunction}</button>
+        </div>
       );
     }
   );

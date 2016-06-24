@@ -35,3 +35,7 @@ h1 {
 .action-section {
   margin-top: 2vh;
 }
+
+.function-wrapper {
+  display: block;
+}

@@ -6,10 +6,10 @@ import { syncHistoryWithStore }               from 'react-router-redux';
 import Root                                   from './public/Root';
 import configureStore                         from './public/create-store';
 
-
 import './public/App/App.css';
 import './public/HomePage/HomePage.css';
 import './public/Login/Login.css';
+import './public/Login/SignUp/SignUp.css';
 import './public/Code/Code.css';
 import './public/Discussion/Discussion.css';
 import './public/Stack/Stack.css';

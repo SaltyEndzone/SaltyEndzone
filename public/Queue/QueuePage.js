@@ -1,7 +1,7 @@
  import React, { Component } from 'react';
 
 import Queue from '../Queue/Queue';
-import Discussion from '../Discussion/Discussion';
+import QueueDiscussion from './QueueDiscussion';
 import QueueCode from './QueueCode';
 
 export default class QueuePage extends Component {
@@ -14,7 +14,7 @@ export default class QueuePage extends Component {
           </div>
           <div className="col-md-6">
             <QueueCode />
-            <Discussion />
+            <QueueDiscussion />
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default class Tree extends Component {
     return <div className="col-md-6">
              <button className="dataStructureTitle">TREE</button>
              <div>
-               <TreeAnimation />
+               <img className="tree-image" src="http://blog.hackerearth.com/wp-content/uploads/2015/05/dfsbfs_animation_final.gif" />
                <TreeFunctions />
              </div>
            </div>
