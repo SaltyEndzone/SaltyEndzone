@@ -4,9 +4,9 @@ import { selectTreeFunction, selectNode, addChild } from './TreeActions';
 import { bindActionCreators } from 'redux';
 
 class TreeFunctions extends Component {
-  addChild (func) {
-    alert('other function ' + func);
-  }
+  // addChild (func) {
+  //   alert('other function ' + func);
+  // }
 
   renderTreeFunctions() {
     return this.props.treeFunction.map( (func) => {  

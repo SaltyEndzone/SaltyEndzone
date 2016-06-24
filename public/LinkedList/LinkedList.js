@@ -7,7 +7,7 @@ export default class LinkedList extends Component {
     return <div className="col-md-6">
               <button className="dataStructureTitle">LINKED LIST</button>
               <div>
-                <LinkedListAnimation />
+                <img className="linkedlist-image" src='http://visualgo.net/img/gif/list.gif'/>
                 <LinkedListFunctions />
               </div>
             </div>
