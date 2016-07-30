@@ -1,3 +1,3 @@
 # Data Structurz
 
-A tool to help visualize common data structures, while learning the corresponding Javascript code used to manipulate them
+A tool to help visualize common data structures, while learning to code useful algorithms for using and building them
